@@ -148,10 +148,13 @@ def main(args):
 	if args.representation == "amr":
 		tokenizer.add_tokens(AMR_SPECIAL_TOKENS)
 
-	train_set = AMRDataset(df_train, tokenizer, args.max_length, pretrained=args.pretrained_model, train=True, generation=generation)
+	train_set = AMRDataset(df_train, tokenizer, args.src_max_length, args.tgt_max_length, \
+				pretrained=args.pretrained_model, train=True, generation=generation)
 
-	dev_set = AMRDataset(df_dev, tokenizer, args.max_length, pretrained=args.pretrained_model)
-	test_set = AMRDataset(df_test, tokenizer, args.max_length, pretrained=args.pretrained_model)
+	dev_set = AMRDataset(df_dev, tokenizer, args.src_max_length, args.tgt_max_length, \
+				pretrained=args.pretrained_model)
+	test_set = AMRDataset(df_test, tokenizer, args.src_max_length, args.tgt_max_length, \
+				pretrained=args.pretrained_model)
 
 	train_params = {'batch_size': args.batch_size,
 				'shuffle': True,
@@ -199,6 +202,7 @@ def main(args):
 
 	patience = args.early_stopping_patience
 
+	os.makedirs(args.save_dir)
 
 	for epoch in range(args.epochs):
 
@@ -212,7 +216,7 @@ def main(args):
 			loss = evaluate_loss(model, dev_loader, tokenizer, device)
 			validation_metric = round(math.exp(loss), 3)
 		else:
-			validation_metric = evaluate_bleu(model, dev_loader, tokenizer, args.max_length, args.beam_size, device)
+			validation_metric = evaluate_bleu(model, dev_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
 
 		print(f'Validation {args.early_stopping_criteria}: {validation_metric:.3f}')
 		if improved(validation_metric, best_metric, args.early_stopping_criteria):
@@ -235,13 +239,13 @@ def main(args):
 	print("Model was loaded sucessfully.")
 
 	# evaluating dev set
-	predictions = predict(model, dev_loader, tokenizer, args.max_length, args.beam_size, device)
+	predictions = predict(model, dev_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
 	with open(args.save_dir + "/dev.out", "w") as f:
 		for prediction in predictions:
 			f.write(prediction.strip() + "\n")
 
 	# evaluating test set
-	predictions = predict(model, test_loader, tokenizer, args.max_length, args.beam_size, device)
+	predictions = predict(model, test_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
 	with open(args.save_dir + "/test.out", "w") as f:
 		for prediction in predictions:
 			f.write(prediction.strip() + "\n")

@@ -1,2 +1,4 @@
 penman
 argparse
+transformers==4.5.1
+sacrebleu

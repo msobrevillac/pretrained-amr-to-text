@@ -172,7 +172,7 @@ def main(args):
 
 
 	tokenizer = AutoTokenizer.from_pretrained(args.model)
-	tokenizer.model_max_length=args.max_length#1024  
+	tokenizer.model_max_length=args.src_max_length#1024  
 	tokenizer.sep_token = '<sep>'
 
 	tokenizer.add_tokens(SPECIAL_TOKENS)
@@ -185,12 +185,12 @@ def main(args):
 	model = AutoModelWithLMHead.from_pretrained(args.model)#
 	model.to(device)
 
-	train_dataloader = get_data_loaders(args.train_source, tokenizer, model, tgt_path=args.train_target, batch_size=args.batch_size, max_length=args.max_length, generation=generation)
+	train_dataloader = get_data_loaders(args.train_source, tokenizer, model, tgt_path=args.train_target, batch_size=args.batch_size, max_length=args.src_max_length, generation=generation)
 
 
 	dev_dataloader = get_data_loaders(args.dev_source, tokenizer, model,
 			tgt_path = args.dev_target, shuffle=False, is_train=False,
-			batch_size=args.batch_size, max_length=args.max_length, generation=generation)
+			batch_size=args.batch_size, max_length=args.src_max_length, generation=generation)
 
 	if args.fixed_embeddings:
 		fixed_name = "wte"
@@ -212,6 +212,8 @@ def main(args):
 
 	patience = args.early_stopping_patience
 
+	os.makedirs(args.save_dir)
+
 	for epoch in range(args.epochs):
 
 		if patience == 0:
@@ -225,7 +227,7 @@ def main(args):
 			validation_metric = round(math.exp(loss), 3)
 		else:
 			validation_metric = evaluate_bleu(model, tokenizer, dev_dataloader, device, \
-				max_length=args.max_length, beam_size=args.beam_size)
+				max_length=args.tgt_max_length, beam_size=args.beam_size)
 
 		print(f'Validation {args.early_stopping_criteria}: {validation_metric:.3f}')
 		if improved(validation_metric, best_metric, args.early_stopping_criteria):
@@ -253,17 +255,17 @@ def main(args):
 	if args.dev_source is not None and args.dev_target is not None:
 		dataloader = get_data_loaders(args.dev_source, tokenizer, model,
 				tgt_path = args.dev_target, shuffle=False, is_train=False,
-				batch_size=args.batch_size, max_length=args.max_length, generation=generation)
+				batch_size=args.batch_size, max_length=args.src_max_length, generation=generation)
 		f = open(args.save_dir + "dev.out", "w")
-		predict(model, tokenizer, dataloader, device, pad=pad, eos=eos, max_length=args.max_length, beam_size=args.beam_size, out=f)
+		predict(model, tokenizer, dataloader, device, pad=pad, eos=eos, max_length=args.tgt_max_length, beam_size=args.beam_size, out=f)
 		f.close()
 
 	if args.test_source is not None:
 		dataloader = get_data_loaders(args.test_source, tokenizer, model,
 							shuffle=False, is_train=False, batch_size=args.batch_size,
-							max_length=args.max_length, generation=generation)
+							max_length=args.src_max_length, generation=generation)
 		f = open(args.save_dir + "test.out", "w")
-		predict(model, tokenizer, dataloader, device, pad=pad, eos=eos, max_length=args.max_length, beam_size=args.beam_size, out=f)
+		predict(model, tokenizer, dataloader, device, pad=pad, eos=eos, max_length=args.tgt_max_length, beam_size=args.beam_size, out=f)
 		f.close()
 		
 

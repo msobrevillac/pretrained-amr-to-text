@@ -29,7 +29,9 @@ parser.add_argument(
 parser.add_argument(
   '-batch-size', '--batch_size', type=int, required=False, default=32, help='Batch size')
 parser.add_argument(
-  '-max-length', '--max_length', type=int, required=False, default=180, help='Max length in encoder')
+  '-src-max-length', '--src_max_length', type=int, required=False, default=180, help='Max length in encoder')
+parser.add_argument(
+  '-tgt-max-length', '--tgt_max_length', type=int, required=False, default=80, help='Max length in decoder')
 
 
 # hyper-parameters

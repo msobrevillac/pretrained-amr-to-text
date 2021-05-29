@@ -1,0 +1,224 @@
+independente :domain ordem
+culpar-01 :arg1 person :name name :op1 alckmin :polarity amr-unknown
+fazer-01 :arg0 eu
+obligate-01 :arg2 acumular-01 :arg0 country :name name :op1 brasil :arg1 experiência
+ideia :domain esse :mod pueril
+doido :domain eles :mod claro
+perceber-01 :polarity - :arg0 amr-unknown
+precisar-01 :arg1 povo :arg2 acumular-01 :arg0 povo :arg1 experiência
+diferente :domain isso
+assumir-01 :polarity - :arg0 ele :arg1-of cause-01 :arg0 amr-unknown
+querer-01 :arg0 ele :polarity -
+rejeitar-01 :arg0 eu :arg1 pessoa :quant 2
+haver-01 :arg1 maioria :purpose fechar-04 :arg1 acordo
+ocupar-01 :arg1 vazio
+ficar-201 :arg1 ele :arg2 só :manner literal
+agenda :poss ninguém :domain isso
+e :op1 subir-01 :arg0 temperatura :op2 descer-01 :arg0 temperatura
+querer-01 :arg0 eu :arg1 preservar-01 :arg0 eu :arg1 meio-ambiente
+possible-01 :arg1 vencer-02 :arg0 nós :condition estar-301 :arg1 person :name name :op1 lula :arg2 nós
+contrast-01 :arg2 voltar-01 :arg4 discursar-01 :mod esse
+perigo :polarity - :domain pessoa :mod esse
+possible-01 :arg1 barrar-01 :arg0 government-organization :name name :op1 stf :arg1 ele
+ocupar-01 :arg1 vazio
+haver-01 :polarity - :arg1 debate :mod interno
+colocar-02 :arg1 decidir-01 :poss ele :arg2 suspeito :polarity amr-unknown
+person :polarity - :name name :op1 lula
+ler-01 :mode imperative :arg1 nota :mod mais :location painel
+ter-01 :arg0 ordem :arg1 transparência
+favorecer-101 :arg1 ele :manner específica :polarity -
+preocupar-01 :arg0 isso :arg1 eu
+leviano :domain eu
+saber-01 :arg0 eu :arg1 nada :arg2 person :name name :op1 bolsonaro
+acontecer-01 :arg1 amr-unknown
+banir-01 :arg1 conservar-01 :arg1 opinião
+sonoplastia :arg1-of fazer-01 :arg0 person :name name :op1 andré :op2 luis :op3 omote
+queimar-01 :arg1 manteiga
+e :op2 fui-que-fui :arg0 eu
+musica :quant 4 :purpose ouvir-01 :arg1 musica :time virada
+auditório :poss museum :name name :op1 masp :location city :name name :op1 sp
+filmar-01 :arg1 book :name name :op1 gh :purpose amr-unknown
+person :name name :op1 sacha :op2 gervasi :arg0-of dirigir-01
+seguir-301 :arg1 eu :arg2 ter-01 :arg0 eu :arg1 opinião :mod esse
+dirigir-01 :arg0 person :name name :op1 bianca :op2 turner :arg1 arte
+psicoanalista :polarity - :domain person :name name :op1 rodrigo
+sucesso :domain pacote
+cause-01 :arg0 amr-unknown :arg1 diferença :mod estratosfera
+imediato :domain coisa :arg1-of responder-01
+falar-01 :arg0 eu :arg1 acordar-01 :time date-entity :time 09:00
+haver-01 :arg1 isso :time já :time ano :mod algum
+moda :domain academia :mod especializado
+comunidade :poss person :name name :op1 bento
+adiantar-02 :polarity - :arg0 chorar-01
+deixar-01 :arg0 ele :arg1 filha :quant 2
+sofrer-01 :arg0 eu :arg1 depressão
+tenacidade :mod puro :domain ele
+culpa :poss amr-unknown
+prever-01 :polarity - :arg1 próximo
+permit-01 :polarity - :arg0 ele :arg1 fazer-01 :arg0 ele :arg1 eufemismo
+monetary-quantity :quant 754 :unit dólar
+aéreo :polarity -
+city :name name :op1 san :op2 sebastián
+city :name name :op1 são :op2 paulo
+person :name name :op1 alvise :op2 camozzi
+certo :domain isso :degree muito
+violência :polarity -
+rate-entity-91 :arg3 temporal-quantity :quant 1 :unit dia
+pessoa :source country :name name :op1 russia
+tolice
+school :name name :op1 instituto :op2 goethe
+amém
+acontecer-01 :arg1 amr-unknown :time desde :op1 então
+haver-01 :arg1 esconder-01 :arg1 nada :polarity -
+compartilhar :mode imperative :arg0 nós :arg1 história :arg1-of incluir-01 :arg2 história
+acusar-01 :arg1 amr-unknown
+person :name name :op1 marie-amélie :op2 vaillat :age temporal-quantity :quant 36 :unit ano :source country :name name :op1 frança
+e :op1 jornalista :op2 colunista
+e :op1 comer-01 :op2 casar-01 :op3 dancar-01
+acontecer-01 :arg1 amr-unknown :time agora
+dizer-01 :arg1 dia :polarity - :arg2 pai
+contrast-01 :arg2 exibir-01 :arg0 movimento :arg1 resiliência
+quantity :quant 20000 :time date-entity :year 2017
+ficar-201 :arg0 missão :arg1 have-degree-91 :arg2 difícil :arg3 mais
+ter-01 :arg0 problema :mod outro :arg1 fundo :mod político
+totem :polarity - :location aeroporto
+dispensar-02 :arg0 churrasco :arg2 e :op1 formalidade :op2 salamaleque
+ter-01 :arg0 ele :arg1 coragem :polarity amr-unknown
+possible-01 :polarity - :arg1 carne :arg1-of faltar-01
+have-degree-91 :arg1 ideologia :arg2 importante :arg3 menos :arg4 lealdade
+circular-01 :arg0 imprensa :arg1 acampamento :manner livre
+contrast-01 :arg1 haver-01 :arg1 coisa :arg1-of arranjar-01 :mod ainda :arg2 minoria :domain coisa
+soltar-01 :arg0 nós :arg1 ninguém :location country :name name :op1 eua
+e :op1 visitar-01 :arg0 eles :arg1 área :mod próximo :polarity - :op2 causar-01 :arg0 eles :arg1 problema
+vir-01 :arg0 ele :accompanier ele :op1 mulher :op2 filho :quant 3
+soar-01 :arg1 som :arg1-of emitir-01 :arg0 acordeão :arg2 e :op1 longe :op2 claro
+say-01 :arg0 eu :arg1 cantar-01 :arg0 nós :mode imperative :manner unissono :arg2 camarada
+include-91 :arg1 homem :arg0-of votar-01 :arg2 political-party :name name :op1 republicano :arg2 homem :arg3 percentage-entity :value 51
+aprender-01 :arg0 nós :location diante :op1 morrer-01
+dizer-01 :arg0 ele :arg1 luto :domain advocacia
+dizer-01 :arg0 person :name name :op1 heidegger :arg1 dar-14 :arg0 morrer-01 :arg1 sentido :arg2 viver-01
+variar-01 :arg1 temperatura :arg3 entre :op1 temperature-quantity :quant 18 :scale celsius :op2 temperature-quantity :quant 23 :scale celsius
+matar-01 :arg0 pessoa :source country :name name :op1 alemanha :arg1 você
+situação :arg1-of ver-01 :arg0 person :name name :op1 lins :location bairro
+conhecer-01 :mode imperative :arg1 história :topic viver-01 :arg0 person :name name :op1 elisabeth :op2 kübler-ross
+monetary-quantity :quant 100 :unit real :domain média :mod preço
+modificar-01 :polarity - :arg1 cobrar-02 :location city :name name :op1 jambeiro
+e :op1 poética :mod madura :op2 profundidade
+enganar-01 :mod inocente
+person :name name :op1 giacomo :op2 vicenzo
+muito :domain isso :polarity amr-unknown
+região :part centro
+email-address-entity :value giacomovicenzo@agenciamural.org.br
+pensar-01 :arg0 eu :arg1 doze :domain eu
+url-entity :value https://ekrbrasil.com/historia-de-vida/
+centena
+e :op2 conseguir-01 :arg0 ele
+conseguir-01 :polarity - :arg0 ele
+country :name name :op1 república :op2 dominicana
+country :name name :op1 canadá
+depender-01 :arg2 ele
+assumir-01 :mode imperative
+dizer-01 :arg0 ele :arg1 person :name name :op1 moro :arg0-of cuidar-01 :arg1 person
+perder-01 :arg0 ele
+espaço
+concordar-01 :arg0 nós
+querer-01 :arg0 person :name name :op1 lula
+country :location country :name name :op1 venezuela
+engano
+quê :mode interrogative
+inédito :mod algo :domain isso
+empatar-01 :arg0 team :name name :op1 lyon :arg2 team :name name :op1 manchester :op2 city :arg3 score-entity :op1 2 :op2 2
+possible-01 :arg1 assim :polarity - :domain isso
+mudar-01 :arg0 eu :arg1 assunto
+começar-01 :arg0 person :name name :op1 paulo :op2 nobre
+continuar-301 :arg1 person :name name :op1 renato :op2 gaúcho :arg2 team :name name :op1 grêmio
+amigo :domain nós :manner rapidez :mod muito
+date-entity :year 1938 :domain ano
+saída :domain amr-unknown
+achar-02 :arg0 eu :domain-of feliz :polarity - :arg1 não
+comandar-01 :arg0 person :name name :op1 onyx :arg1 área :mod esse
+relacionar-101 :arg0 vôce :arg1 ele :manner amr-unknown
+colaborar-01 :topic povo :mod espontânea :domain thing :arg1-of acontecer-01
+conceito :arg1-of definir-01 :degree bem :domain e :op1 ditadura :op2 democracia
+problema :arg1-of have-degree-91 :arg2 grande :arg3 máximo :poss nós :domain reforma :topic política
+fazer-01 :arg0 eu :time já :condition possible-01 :arg1 fazer-01 :arg0 eu :mod sozinho
+fazer-01 :arg0 psicopata :mod só :arg1 negócio :mod esse :mod evidente
+aguardar-01 :arg0 caso :arg1 analisar-01 :arg0 government-organization :name name :op1 supremo :location government-organization
+dizer-01 :arg0 eu :arg1 e :op1 valeu :op2 país :poss nós :domain country :name name :op1 brasil :arg2 pessoal
+lembrar-01 :polarity - :arg0 eu :arg1 conversar-01 :arg0 nós :mod mais
+concluir-01 :arg0 ele :arg1 respeitar-01 :arg0 ele :arg1 subjetividade
+visualizar-01 :arg0 eu :source fora :domain esse
+escolher-01 :arg0 presidente :arg1-of eleger-02 :arg1 ministro :quant 19 :mod já
+contrast-01 :arg1 acabar-01 :polarity - :arg1 temporada :mod ainda
+city :name name :op1 doha :domain cidade :mod favorito :location country :name name :op1 qatar
+ficar-03 :arg1 team :name name :op1 palmeiras :arg2 lucro
+trabalhar-01 :arg0 nós :arg3 pessoa :arg0-of dirigir-01 :arg1 team :name name :op1 palmeiras
+violência :li 1 :location gramado
+completar-01 :arg1 quadrangular :arg2 equipe :quant 2 :mod local
+querer-01 :arg0 eu :arg1 campeão :mod mundo :domain team :name name :op1 palmeiras
+be-temporally-at-91 :arg2 date-entity :day 3 :time 20:00 :weekday segunda
+acontecer-01 :arg1 algo :mod semelhante :mod e :op1 sub-17 :op2 sub-20
+disputar-01 :arg0 ambos :arg1 bola :path alto
+usar-01 :polarity - :arg0 alguém :arg1 local :time visitar-01 :arg0 newspaper :name name :op1 folha :arg1 fábrica
+haver-01 :arg1 novata :mod só :location government-organization :name name :op1 senado :beneficiary lado :mod conservador
+crescer-01 :arg1 economia :arg2 percentage-entity :value 2.8 :time período :manner realidade
+demorar-01 :arg0 cerimônia :mod oficial :topic assinar-01 :arg1 temporal-quantity :quant 90 :unit minuto
+assunto :domain crise :location country :name name :op1 venezuela :arg0-of permear-01 :arg1 reunião
+aberto :beneficiary público :domain e :op1 auto :mod judicial :op2 processo :mod em-andamento :mod também
+pessoa :source country :name name :op1 coreia :op2 do :op3 norte :arg1-of ouvir-01 :arg0 newspaper :name name :op1 folha :arg0-of dizer-01 :arg1 cair-01 :arg1 ele
+e :op1 ficar-202 :arg1 ele :arg2 cargo :time date-interval :op1 date-entity :month 1 :op2 date-entity :month 8 :op2 renunciar-01 :arg0 ele :arg1 cargo :time depois :op1 date-entity
+apaixonar-101 :arg1 city :name name :op1 buenos :op2 aires :time a-primeira-vista
+possible-01 :arg1 ganhar-01 :arg0 country :name name :op1 brasil :arg1 amr-unknown :condition sair-01 :arg0 country :arg1 acordar-02 :mod de-fato
+durar-01 :arg1 força-tarefa :mod essa :arg2 temporal-quantity :quant 10 :unit dia :location fábrica :name name :op1 ryuwon :topic calçado
+acontecer-01 :arg1 amr-unknown :condition rejeitar-01 :arg0 government-organization :name name :op1 parlamento :arg1 acordar-02
+tentar-01 :polarity - :arg0 ele :arg1 esconder-01 :arg0 ele :arg1 nada :arg1-of acrescentar-02 :arg0 ele
+e :op1 sair-101 :arg0 ele :arg1 bem :degree tremendo :time ao-longo-do-caminho
+opcao :polarity - :domain voltar-01 :arg1 person :source honduras :name name :op1 edgardo :op2 garcia :age temporal-quantity :quant 44 :unit ano :beneficiary person
+evitar-01 :arg0 person :name name :op1 shannon :arg1 comentar-01 :arg0 person :arg1 credencial :mod direita :poss presidente :arg1-of eleger-02 :location country :name name :op1 brasil
+e :op1 inspirar-01 :arg0 mariposa :arg1 resistir-01 :topic nacional :op2 inspirar-01 :arg0 mariposa :arg1 resistir-01 :topic internacional
+e :op1 perder-02 :arg0 avião :arg1 contato :op2 cair-04 :arg1 avião :location meio :op1 trajeto
+promover-01 :arg0 person :name name :op1 alexandra :op2 loras :arg1 event :name name :op1 fórum :op2 diversifique :mod edição :ord ordinal-entity :value 1
+divulgar-01 :arg1 lista :time date-entity :day 10 :month 12
+receber-02 :arg0 anunciar-01 :arg1 nascer-01 :arg2 criticar-01 :quant muito :location mundo :quant todo
+parecer-01 :arg1 deixar-02 :arg1 assumir-02 :arg0 eles :arg1 compromisso :arg2 eles :arg2 vestibular :mod atual :beneficiary pai
+afirmar-01 :arg0 ele :arg1 ter-01 :polarity - :arg0 ele :arg1 dado :topic pedir-01 :arg0 médico :mod número :arg1 continuar-301 :arg1 médico
+encorpar-01 :arg1 coleção :duration múltiplo :op1 temporal-quantity :quant 1 :unit ano
+ficar-01 :arg1 program :name name :op1 mais :op2 médicos :arg2 amr-unknown :time depois :op1 sair-01 :arg1 pessoa :source country :name name :op1 cuba
+trazer-01 :arg0 vestibular :poss organization :name name :op1 fuvest :arg1 novidade :time ano :mod este
+ocorrer-01 :arg1 isso :arg2 situação :topic e :op1 emergência :op2 símbolo
+presente :domain e :op1 person :name name :op1 marielle :op2 person :name name :op1 mirabal :manner eterno :arg1-of cause-01 :arg0 perpetuar-01 :arg0 nós :arg1 e
+conhecer-01 :mode imperative :arg1 propriedade :quant 6 :arg1-of destacar-101 :arg2 prática :mod sustentável
+destruir-01 :arg1 comunidade :time bandeirante :time depois :duration temporal-quantity :quant 10 :unit minuto
+gostar-01 :arg0 eu :arg1 renovar-01 :arg1 energia :time sempre
+aula :topic e :op1 thing :name name :op1 krav :op2 maga :op2 massagem :topic tântrica
+querer-01 :arg0 pessoa :arg1 ter-01 :arg0 pessoa :arg1 thing :arg1-of acreditar-01 :arg0 pessoa
+street-address-91 :arg1 s/n :arg2 road :name name :op1 ramos :op2 de :op3 azevedo :arg4 city :name name :op1 são :op2 paulo
+e :op1 saber-01 :arg0 ele :arg1 isso :op2 falar-01 :arg0 ele
+poste-do-inferno :domain maoismo
+person :name name :op1 naief :op2 haddad :arg0-of have-org-role-91 :arg1 company :name name :op1 folha :arg2 jornalista
+e :op1 person :name name :op1 deus :op2 linha :topic crédito :poss person
+contrast-01 :arg1 lugar :domain planet :name name :op1 marte :mod lindo :arg2 inóspito :domain planet
+fugir-01 :arg0 bicho :destination amr-unknown
+e :op1 viver-01 :arg0 eu :arg1 isso :time dia :quant todo
+possible-01 :arg1 criar-01 :arg1 e :op1 problema :mod emoção :op2 retratar-01 :mod social
+programar-01 :arg1 espetáculo :arg2 começar-01 :arg0 espetáculo :time date-entity :time 10:30
+smartphone :quant muito :arg1-of conectar-01 :location ao-redor
+trazer-01 :arg0 você :arg1 coisa :mod demais :arg4 viagem :mod também :polarity amr-unknown
+gostar-01 :polarity - :arg1-of request-confirmation-91
+decidir-01 :arg0 organization :name name :op1 gaviões :op2 da :op3 fiel :arg0-of torcer-01 :manner organizar-01 :arg1 agir-01 :arg0 organization :manner contra :arg1 arrastão :location estádio :mod futebol
+e :op1 estar-301 :arg1 eles :arg2 prissão :mod especial :cause ter-01 :arg0 eles :arg1 curso :mod superior :op2 aguardar-01 :arg0 eles :arg1 court-decision :name name :op1 julgamento :op2 de :op3 recurso
+adotar-01 :arg0 person :name name :op1 ieltsin :arg1 medida :mod outro :mod símbolo :purpose mostrar-01 :arg0 person :arg1 perder-02 :arg1 poder :arg0 government-organization :name name :op1 parlamento
+same-01 :arg1 ao-todo :arg2 computador :quant cerca :op1 5800 :arg1-of usar-01
+dizer-01 :arg0 person :name name :op1 evandro :arg1 obligate-01 :polarity - :arg2 adquirir-01 :arg0 pessoa :arg1 arma :purpose defender-01 :arg0 pessoa :arg1 pessoa
+jogo :mod interativo :arg1-of afetar-01 :arg0 circunstância :domain política
+homem :domain eu :arg0-of agir-01 :arg2 impulso
+obligate-01 :polarity - :arg2 agir-01 :arg0 ele :arg2 assim
+querer-01 :arg0 eu :arg1 viver
+canal :mod maluco
+instead-of-91 :arg1 mato :arg2 e :op1 parque :mod temático :op1 companhia :arg0-of fabricar-01 :arg1 chocolate
+acabar-01 :arg0 nós :arg1 indústria :mod multa :arg1-of dizer-01 :arg0 person :name name :op1 bolsonaro
+e :op1 atuar-01 :arg0 ele :arg1 general :mod bom :degree muito
+possible-01 :domain advogado :quant cerca :op1 322700000 :arg1 votar-01
+achar-02 :arg0 eu :arg2 chato :arg1 lado :quant 2
+estrear-01 :arg0 person :name name :op1 händel :arg1 ópera :quant cerca :op1 40 :mod só :time date-entity :decade 1720
+tentar-01 :arg0 eu :location aqui :arg1 questionar-01 :arg0 eu :arg1 representar-01 :arg0 faltar-01 :arg1 cuidar-01 :arg1 thing

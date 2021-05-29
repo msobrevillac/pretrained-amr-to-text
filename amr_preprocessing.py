@@ -1,6 +1,7 @@
 import penman
 from utils import parse_corpus
 import argparse
+import os
 
 parser = argparse.ArgumentParser(description="Pre processing")
 parser.add_argument(
@@ -10,7 +11,7 @@ parser.add_argument(
 parser.add_argument(
 	'-mode', '--mode', type=str,  choices=['penman', 'penman-frames', 'dfs', 'dfs-relations', 'dfs-frames', 'dfs-relations-frames'], default="penman", required=True, help='mode')
 parser.add_argument(
-	'-no-variable', '--no-variable', action='store_true', required=False, help='No variables')
+	'-no-variable', '--no-variable', action='store_true', required=False, help='No variables. This only works for penman notation.')
 parser.add_argument(
   '-parsing','--parsing', action='store_true', required=False, help='Parsing or generation')
 
@@ -118,8 +119,11 @@ def get_penman(amr, frames=True, parsing=False, no_variable=False):
 
 
 def process(args, amrs, dataset):
-	fout_src = open(args.output + "/"  + dataset + "/amr.txt", "w")
-	fout_tgt = open(args.output + "/" + dataset + "/sentence.txt", "w")
+	output_dir = os.path.join(args.output, dataset)
+	os.makedirs(output_dir)
+
+	fout_src = open(output_dir + "/amr.txt", "w", encoding="utf8")
+	fout_tgt = open(output_dir + "/sentence.txt", "w", encoding="utf8")
 
 	for index, amr in enumerate(amrs):
 		str_input = ""

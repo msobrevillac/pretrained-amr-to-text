@@ -47,11 +47,11 @@ class WebnlgDataset(Dataset):
 
 class AMRDataset(Dataset):
 
-	def __init__(self, dataframe, tokenizer, max_len, pretrained="gpt2", train=False, generation=True):
+	def __init__(self, dataframe, tokenizer, src_max_len, tgt_max_len, pretrained="gpt2", train=False, generation=True):
 		self.tokenizer = tokenizer
 		self.data = dataframe
-		self.source_len = max_len
-		self.target_len = max_len
+		self.source_len = src_max_len
+		self.target_len = tgt_max_len
 		self.source = self.data.source
 		if 'target' in dataframe.columns:
 			self.target = self.data.target
@@ -74,7 +74,7 @@ class AMRDataset(Dataset):
 		if self.pretrained.endswith("t5"):
 			special_tokens += ["traduzir grafo a sentença:"]
 		if self.pretrained.endswith("bart"):
-			special_tokens += ["amr_AMR","pt_PT"]
+			special_tokens += ["amr_AMR","pt_XX"]
 		self.tokenizer.add_tokens(list(set(special_tokens)))
 
 	def __getitem__(self, index):
@@ -101,7 +101,7 @@ class AMRDataset(Dataset):
 					pad_to_max_length=True, return_tensors='pt', truncation=True)
 
 			if self.pretrained.endswith("bart"):
-				str_target = "pt_PT "  + str(self.target[index]).strip() + " </s>"
+				str_target = "pt_XX "  + str(self.target[index]).strip() + " </s>"
 				target = self.tokenizer.batch_encode_plus([str_target], max_length= self.target_len,
 					pad_to_max_length=True, return_tensors='pt', truncation=True, add_special_tokens=False)
 
