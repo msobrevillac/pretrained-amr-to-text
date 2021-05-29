@@ -29,7 +29,7 @@ def decode(labels, tokenizer):
 	return cleaned_text
 
 
-def train_epoch(model, epoch, loader, optimizer, print_every, device, pad=-100, accumulation_steps):#, pad=-100:
+def train_epoch(model, epoch, loader, optimizer, print_every, device, accumulation_steps, pad=-100):#, pad=-100:
 	model.train()
 	total_loss = 0
 	n = 0
