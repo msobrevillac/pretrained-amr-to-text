@@ -224,9 +224,10 @@ def main(args):
 			best_metric = validation_metric
 			print("Saving checkpoint ...")
 			model.save_pretrained(args.save_dir)
-			if not os.path.exists(args.save_dir + "vocab"):
-				os.mkdir(args.save_dir + "vocab")
-			tokenizer.save_pretrained(args.save_dir + "vocab")
+			vocab_path = os.path.join(args.save_dir, "vocab")
+			if not os.path.exists(vocab_path):
+				os.mkdir(vocab_path)
+			tokenizer.save_pretrained(vocab_path)
 			patience = args.early_stopping_patience
 			print("Model saved")
 		else:
@@ -239,12 +240,14 @@ def main(args):
 	print("Model was loaded sucessfully.")
 
 	# evaluating dev set
+	print("Predicting on dev set ...")
 	predictions = predict(model, dev_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
 	with open(args.save_dir + "/dev.out", "w") as f:
 		for prediction in predictions:
 			f.write(prediction.strip() + "\n")
 
 	# evaluating test set
+	print("Predicting on test set ...")
 	predictions = predict(model, test_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
 	with open(args.save_dir + "/test.out", "w") as f:
 		for prediction in predictions:

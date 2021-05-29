@@ -235,11 +235,10 @@ def main(args):
 			best_metric = validation_metric
 			print("Saving checkpoint ...")
 			model.save_pretrained(args.save_dir)
-			#torch.save(model.state_dict(), args.save_dir + "model.bin")
-			if not os.path.exists(args.save_dir + "vocab"):
-				os.mkdir(args.save_dir + "vocab")
-			#tokenizer.save_vocabulary(args.save_dir + "vocab")
-			tokenizer.save_pretrained(args.save_dir + "vocab")
+			vocab_path = os.path.join(args.save_dir, "vocab")
+			if not os.path.exists(vocab_path):
+				os.mkdir(vocab_path)
+			tokenizer.save_pretrained(vocab_path)
 			patience = args.early_stopping_patience
 			print("Model saved")
 		else:
@@ -251,7 +250,7 @@ def main(args):
 	model.to(device)
 	print("Model was loaded sucessfully.")
 
-
+	print("Predicting on dev set ...")
 	if args.dev_source is not None and args.dev_target is not None:
 		dataloader = get_data_loaders(args.dev_source, tokenizer, model,
 				tgt_path = args.dev_target, shuffle=False, is_train=False,
@@ -260,6 +259,7 @@ def main(args):
 		predict(model, tokenizer, dataloader, device, pad=pad, eos=eos, max_length=args.tgt_max_length, beam_size=args.beam_size, out=f)
 		f.close()
 
+	print("Predicting on test set ...")
 	if args.test_source is not None:
 		dataloader = get_data_loaders(args.test_source, tokenizer, model,
 							shuffle=False, is_train=False, batch_size=args.batch_size,
