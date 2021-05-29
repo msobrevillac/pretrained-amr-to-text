@@ -220,7 +220,7 @@ def main(args):
 			print("The training will stop because it reaches the limit of patience")
 			break
 
-		train_epoch(model, epoch, train_dataloader, optimizer, args.print_every, device, pad=pad, args.accum_steps)
+		train_epoch(model, epoch, train_dataloader, optimizer, args.print_every, device, args.accum_steps, pad=pad)
 
 		if args.early_stopping_criteria == "perplexity":
 			loss = evaluate_loss(model, dev_dataloader, device, pad=pad)
