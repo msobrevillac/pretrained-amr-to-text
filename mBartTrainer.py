@@ -4,7 +4,7 @@ import math
 import torch
 from torch.utils.data import DataLoader
 from transformers import AdamW
-from transformers import MBartForConditionalGeneration, MBartTokenizer
+from transformers import MBartForConditionalGeneration, MBartTokenizer#, MBart50TokenizerFast
 from constants import AMR_SPECIAL_TOKENS
 import sacrebleu
 import os

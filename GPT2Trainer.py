@@ -4,7 +4,7 @@ from transformers import AdamW
 from transformers import AutoTokenizer, AutoModelWithLMHead
 
 from constants import SPECIAL_TOKENS, AMR_SPECIAL_TOKENS
-
+import math
 from amr_utils import get_data_loaders
 from utils import trim_batch, apply_loss, set_seed, improved
 import sacrebleu
@@ -172,7 +172,7 @@ def main(args):
 
 
 	tokenizer = AutoTokenizer.from_pretrained(args.model)
-	tokenizer.model_max_length=args.src_max_length#1024  
+	tokenizer.model_max_length=args.src_max_length + args.tgt_max_length + 2#1024  
 	tokenizer.sep_token = '<sep>'
 
 	tokenizer.add_tokens(SPECIAL_TOKENS)
@@ -252,19 +252,23 @@ def main(args):
 
 	print("Predicting on dev set ...")
 	if args.dev_source is not None and args.dev_target is not None:
+		print("Loading dev dataset")
 		dataloader = get_data_loaders(args.dev_source, tokenizer, model,
 				tgt_path = args.dev_target, shuffle=False, is_train=False,
 				batch_size=args.batch_size, max_length=args.src_max_length, generation=generation)
-		f = open(args.save_dir + "dev.out", "w")
+		f = open(args.save_dir + "/dev.out", "w")
+		print("Running...")
 		predict(model, tokenizer, dataloader, device, pad=pad, eos=eos, max_length=args.tgt_max_length, beam_size=args.beam_size, out=f)
 		f.close()
 
 	print("Predicting on test set ...")
 	if args.test_source is not None:
+		print("loading test dataset")
 		dataloader = get_data_loaders(args.test_source, tokenizer, model,
 							shuffle=False, is_train=False, batch_size=args.batch_size,
 							max_length=args.src_max_length, generation=generation)
-		f = open(args.save_dir + "test.out", "w")
+		f = open(args.save_dir + "/test.out", "w")
+		print("Running...")
 		predict(model, tokenizer, dataloader, device, pad=pad, eos=eos, max_length=args.tgt_max_length, beam_size=args.beam_size, out=f)
 		f.close()
 		

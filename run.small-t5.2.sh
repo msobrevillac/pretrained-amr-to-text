@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for mode in "penman-frames-var"
+for mode in "dfs-relations" "dfs-frames" "dfs-relations-frames"
 do
 
 IFS=","
