@@ -32,7 +32,7 @@ def predict(model, loader, tokenizer, max_length, beam_size, device):
 				eos_token_id=tokenizer.eos_token_id)
 
 			preds = [tokenizer.decode(g, skip_special_tokens=True, clean_up_tokenization_spaces=False) for g in generated_ids]
-			#print(_,"/", len(loader))
+
 			predictions.extend(preds)
 	return predictions
 
@@ -151,8 +151,11 @@ def main(args):
 
 	tokenizer = T5Tokenizer.from_pretrained(args.model)
 
-	if args.representation == "amr":
-		tokenizer.add_tokens(AMR_SPECIAL_TOKENS)
+	current_length_tokenizer = len(tokenizer)
+
+	for ast in AMR_SPECIAL_TOKENS:
+		if ast not in toknizer.get_added_vocab():
+			tokenizer.add_tokens([ast])
 
 	train_set = AMRDataset(df_train, tokenizer, args.src_max_length, args.tgt_max_length, \
 						pretrained=args.pretrained_model, train=True, generation=generation)
@@ -181,16 +184,16 @@ def main(args):
 	train_loader = DataLoader(train_set, **train_params)
 	dev_loader = DataLoader(dev_set, **dev_params)
 	test_loader = DataLoader(test_set, **test_params)
-	
-	
+
 	model = T5ForConditionalGeneration.from_pretrained(args.model)
 	if torch.cuda.device_count() > 1:
 		print("Let's use", torch.cuda.device_count(), "GPUs!")
 		model = nn.DataParallel(model)
-	
+
 	model = model.to(device)
 
-	model.resize_token_embeddings(len(tokenizer))
+	if len(tokenizer) != current_length_tokenizer:
+		model.resize_token_embeddings(len(tokenizer))
 
 	if args.fixed_embeddings:
 		fixed_name = "shared.weight"
@@ -229,33 +232,32 @@ def main(args):
 		if improved(validation_metric, best_metric, args.early_stopping_criteria):
 			print(f'The {args.early_stopping_criteria} improved from {best_metric:.3f} to {validation_metric:.3f}')
 			best_metric = validation_metric
-			print("Saving checkpoint ...", args.save_dir)
+			print("Saving checkpoint ...")
 			model.save_pretrained(args.save_dir)
 			vocab_path = os.path.join(args.save_dir, "vocab")
 			if not os.path.exists(vocab_path):
 				os.mkdir(vocab_path)
-			tokenizer.save_pretrained(vocab_path)
+			tokenizer.save_pretrained(args.save_dir)
 			patience = args.early_stopping_patience
 			print("Model saved")
 		else:
 			patience -= 1
 			print(f'Patience ({patience}/{args.early_stopping_patience})')
-	
+
 	print("Loading best checkpoint ...")
 	model = T5ForConditionalGeneration.from_pretrained(args.save_dir)#
 	model.to(device)
 	print("Model was loaded sucessfully.")
 
-
 	# evaluating dev set
-	print("Predicting on dev set ...", args.dev_source)
+	print("Predicting on dev set ...")
 	predictions = predict(model, dev_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
 	with open(args.save_dir + "/dev.out", "w") as f:
 		for prediction in predictions:
 			f.write(prediction.strip() + "\n")
 
 	# evaluating test set
-	print("Predicting on test set ...", args.test_source)
+	print("Predicting on test set ...")
 	predictions = predict(model, test_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
 	with open(args.save_dir + "/test.out", "w") as f:
 		for prediction in predictions:

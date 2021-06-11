@@ -72,7 +72,7 @@ parser.add_argument(
   '-model','--model', type=str, required=False, default="pierreguillou/gpt2-small-portuguese", help='Path for a pre-trained model file (just to perform transfer learning)')
 
 parser.add_argument(
-  '-pretrained-model', '--pretrained-model', default='gpt2', type=str, choices=['gpt2', 'bart', 'mbart', 't5', 'mt5'], required=False, help='Pretrained model to be used')
+  '-pretrained-model', '--pretrained-model', default='gpt2', type=str, choices=['gpt2', 'bart', 'mbart', 't5', 'mt5', "t5-multi"], required=False, help='Pretrained model to be used')
 
 parser.add_argument(
   '-early-stopping-patience','--early-stopping-patience', type=int, default=15, required=False, help='Early stopping patience')

@@ -51,6 +51,24 @@ def parse_corpus(fname):
 	return amrs
 
 
+def read_just_amr(fname):
+	'''
+		This method parses the AMR corpus extracting ids, sentences, alignments and AMR-annotations
+	'''
+
+	with open(fname) as f:
+		doc = f.read()
+
+	instances = doc.split('\n\n')
+	amrs = []
+	for instance in instances:
+		try:
+			amrs.append(instance)
+		except:
+			pass
+	return amrs
+
+
 def trim_pad(input_ids, lm_labels, token_type_ids, attention_mask, pad):
 	min_idx = (input_ids != pad).nonzero()[:, 1].min()
 

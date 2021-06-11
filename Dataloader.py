@@ -2,6 +2,7 @@ import pandas as pd
 import torch
 import torch.nn.functional as F
 from torch.utils.data import Dataset
+from constants import UD_SPECIAL_PREFIX, CG_SPECIAL_PREFIX, GRAPH_SPECIAL_PREFIX
 
 class WebnlgDataset(Dataset):
 
@@ -47,7 +48,8 @@ class WebnlgDataset(Dataset):
 
 class AMRDataset(Dataset):
 
-	def __init__(self, dataframe, tokenizer, src_max_len, tgt_max_len, pretrained="gpt2", train=False, generation=True):
+	def __init__(self, dataframe, tokenizer, src_max_len, tgt_max_len, \
+				pretrained="gpt2", train=False, generation=True):
 		self.tokenizer = tokenizer
 		self.data = dataframe
 		self.source_len = src_max_len
@@ -70,18 +72,25 @@ class AMRDataset(Dataset):
 		else:
 			source = self.target
 
-		special_tokens = [tok for src in source for tok in src.split() if tok.startswith(":")]
+		special_tokens = [tok for src in source for tok in src.split() if tok.startswith(":") \
+								and tok not in self.tokenizer.get_added_vocab()]
+
 		if self.pretrained.endswith("t5"):
-			special_tokens += ["traduzir grafo a sentença:"]
+
+			for gsp in GRAPH_SPECIAL_PREFIX:
+				if gsp not in self.tokenizer.get_added_vocab():
+					special_tokens.append(gsp)
+
 		if self.pretrained.endswith("bart"):
 			special_tokens += ["amr_AMR","pt_XX"]
-		self.tokenizer.add_tokens(list(set(special_tokens)))
+
+		if len(special_tokens) > 0:
+			self.tokenizer.add_tokens(list(set(special_tokens)))
 
 	def __getitem__(self, index):
 
 		str_source = str(self.source[index]).strip()
 		if self.pretrained.endswith("t5"):
-			str_source = "traduzir grafo a sentença: " + str_source
 			source = self.tokenizer.batch_encode_plus([str_source], max_length= self.source_len, 
 				pad_to_max_length=True, return_tensors='pt', truncation=True)
 
