@@ -1,0 +1,244 @@
+traduzir grafo a sentença: ter-01 :polarity - :arg0 eu :mod também
+traduzir grafo a sentença: fazer-405 :polarity - :arg2 sentido
+traduzir grafo a sentença: possible-01 :time depois :op1 hoje
+traduzir grafo a sentença: demorar-01 :arg1 have-quant-91 :arg1 minuto :arg2 15 :arg3 menos
+traduzir grafo a sentença: melhorar-01 :manner amr-unknown
+traduzir grafo a sentença: defender-01 :arg0 eu :arg1 person :name name :op1 alckmin :polarity -
+traduzir grafo a sentença: classificar-01 :arg1 governar-01 :arg0 person :name name :op1 bolsonaro :manner amr-unknown
+traduzir grafo a sentença: comunismo :polarity - :domain person :name name :op1 haddad
+traduzir grafo a sentença: ele :mod também :manner lamentável
+traduzir grafo a sentença: aconselhar-01 :polarity amr-unknown
+traduzir grafo a sentença: sumir-01 :arg1 figura
+traduzir grafo a sentença: impor-01 :arg0 amr-unknown :arg1 isso :purpose valor
+traduzir grafo a sentença: e :op1 isso :mod person :name name :op1 geraldo :op2 isso :polarity - :mod person
+traduzir grafo a sentença: sugerir-01 :arg0 eu :arg1 nome :quant 1
+traduzir grafo a sentença: permit-01 :arg1 sentir-02 :arg0 ele :polarity amr-unknown
+traduzir grafo a sentença: pelo-amor-de-deus :mode expressive
+traduzir grafo a sentença: same-01 :polarity - :arg1 isso :arg2 assim
+traduzir grafo a sentença: nada :polarity - :mod diferente
+traduzir grafo a sentença: ler-01 :mode imperative :arg1 nota :mod mais :medium painel
+traduzir grafo a sentença: surgir-01 :arg1 person :name name :op1 jair :op2 bolsonaro :arg2 ele
+traduzir grafo a sentença: terminar-03 :arg1 war :name name :op1 primeira :op2 guerra :op3 mundial
+traduzir grafo a sentença: ocupar-01 :arg0 person :name name :op1 bolsonaro
+traduzir grafo a sentença: positivo :domain produto :mod fim
+traduzir grafo a sentença: acompanhar-02 :arg0 eu :arg1 coisa
+traduzir grafo a sentença: governar-01 :polarity - :arg1 país :arg2 amr-unknown
+traduzir grafo a sentença: person :name name :op1 serra :arg1-of acusar-01 :mod também
+traduzir grafo a sentença: corrupção :location estado :polarity amr-unknown
+traduzir grafo a sentença: consequência :mod também
+traduzir grafo a sentença: criminoso :domain nada :topic isso
+traduzir grafo a sentença: amr-unknown :domain person :name name :op1 lula
+traduzir grafo a sentença: prestar-01 :arg0 ninguém :arg1 atenção :degree menor
+traduzir grafo a sentença: ter-01 :polarity - :arg0 eu :arg1 capacidade :purpose julgar-01
+traduzir grafo a sentença: haver-01 :arg1 algo :mod antidemocracia :mod profundo
+traduzir grafo a sentença: person :name name :op1 marcos :op2 costa :age temporal-quantity :quant 54
+traduzir grafo a sentença: person :name name :op1 danielle :op2 meireles :arg0-of operar-04 :arg1 luz
+traduzir grafo a sentença: série :poss broadcast-program :name name :op1 curta :op2 !
+traduzir grafo a sentença: pessoa :arg0-of dirigir-01 :domain person :name name :op1 charles :op2 sturridge
+traduzir grafo a sentença: aula :topic cinema :domain isso
+traduzir grafo a sentença: e :op1 simples :op2 excelente
+traduzir grafo a sentença: pessoa :arg0-of dirigir-01 :domain person :name name :op1 bailley :op2 walsh
+traduzir grafo a sentença: ou :op1 sugerir-01 :op2 criticar-01 :op3 dúvida :polarity amr-unknown
+traduzir grafo a sentença: organization :name name :op1 cia :domain exemplo
+traduzir grafo a sentença: e :op1 date-entity :time 21:00 :weekday quinta-feira :op2 date-entity :time 21:00 :weekday sexta-feira :op3 date-entity :time 21:00 :weekday sábado
+traduzir grafo a sentença: atingir-02 :arg1 píncaro :mod excelência
+traduzir grafo a sentença: ter-01 :arg0 ele :arg1 época :poss ele :time já
+traduzir grafo a sentença: perder-02 :arg0 amiga :poss eu :arg1 mãe
+traduzir grafo a sentença: have-purpose-91 :arg2 satisfazer-01 :mod pessoa
+traduzir grafo a sentença: pai :location arm-unknown
+traduzir grafo a sentença: querer-01 :arg0 nós :arg1 saber-01 :arg0 nós :arg2 você :mod mais
+traduzir grafo a sentença: ocorrer-01 :arg1 isso :manner amr-unknown
+traduzir grafo a sentença: agradecer-01 :arg0 você :arg1 tricolor :domain eu
+traduzir grafo a sentença: adiantar-02 :polarity - :arg1 fugir-01
+traduzir grafo a sentença: descansar-01 :arg1 person :name name :op1 galfano :location padaria
+traduzir grafo a sentença: normalizar-01 :arg1 circular-01 :time já
+traduzir grafo a sentença: soltar-01 :arg1 partícula
+traduzir grafo a sentença: passar-11 :arg1 ele :arg2 mal :location vestiário
+traduzir grafo a sentença: contrast-01 :arg2 obligate-01 :arg1 ficar-201 :arg2 claro
+traduzir grafo a sentença: hora :mod perder-01 :domain mistério
+traduzir grafo a sentença: acreditar-01 :arg0 eu :polarity -
+traduzir grafo a sentença: esperar-01 :mode imperative
+traduzir grafo a sentença: city :name name :op1 módena
+traduzir grafo a sentença: linguiça
+traduzir grafo a sentença: monetary-quantity :quant 1.450 :unit real
+traduzir grafo a sentença: obligate-01 :arg1 admitir-01 :arg0 eu
+traduzir grafo a sentença: city :name name :op1 belo :op2 horizonte
+traduzir grafo a sentença: person :name name :op1 yonatan :op2 gat
+traduzir grafo a sentença: e :op1 continuar-02 :arg1 isso
+traduzir grafo a sentença: person :name name :op1 fernanda :op2 d'umbra
+traduzir grafo a sentença: time :frequency toda-hora
+traduzir grafo a sentença: conseguir-03 :polarity - :arg0 eu
+traduzir grafo a sentença: ter-01 :arg0 ele :arg1 razão
+traduzir grafo a sentença: começar-01 :arg0 eu :manner bem
+traduzir grafo a sentença: bobagem
+traduzir grafo a sentença: menos :polarity -
+traduzir grafo a sentença: claro :polarity - :domain isso
+traduzir grafo a sentença: acontecer-01 :polarity - :arg0 isso :manner simples
+traduzir grafo a sentença: senda :mod paralela :quant 2
+traduzir grafo a sentença: contrast-01
+traduzir grafo a sentença: infiltrar-01 :arg0 vândalo
+traduzir grafo a sentença: alegar-01 :arg0 person :name name :op1 trump :arg1 amr-unknown
+traduzir grafo a sentença: haver-01 :arg1 explicação :mod algum :purpose isso
+traduzir grafo a sentença: e :op1 agency :name name :op1 reuters :op2 agency :name name :op1 associated :op2 press
+traduzir grafo a sentença: contrast-01 :arg2 existir-01 :arg0 salário :mod mínimo :polarity amr-unknown
+traduzir grafo a sentença: person :name name :op1 enrique :op2 peña :op2 nieto :mod country :name name :op1 méxico
+traduzir grafo a sentença: amr-unknown :domain government-organization :name name :op1 união :op2 europeia
+traduzir grafo a sentença: acordar-02 :arg1 amr-unknown
+traduzir grafo a sentença: country :name name :op1 luanda :mod escala :poss nós :ord ordinal-entity :value 2
+traduzir grafo a sentença: person :name name :op1 lucille :polarity - :domain isso
+traduzir grafo a sentença: accompany-01 :polarity - :arg0 person :name name :op1 lucille
+traduzir grafo a sentença: entrar-01 :arg0 comida :arg1 cena
+traduzir grafo a sentença: abrir-01 :polarity - :arg0 thing :mod emergência
+traduzir grafo a sentença: be-located-at-91 :arg1 bicicleta :arg2 jardim :mod pequeno
+traduzir grafo a sentença: ter-01 :arg0 ele :arg1 chance :mod suficiente :purpose salvar-01 :arg0 ele
+traduzir grafo a sentença: reves :time ano :mod último
+traduzir grafo a sentença: vir-01 :arg1 vingança :poss person :name name :op1 bush :time date-entity :year 2000
+traduzir grafo a sentença: manter-01 :arg0 ele :arg1 forma :mod bom :mod físico :duration tempo :mod muito
+traduzir grafo a sentença: maratona :purpose cumprir-01 :arg1 meta :prep-em indústria
+traduzir grafo a sentença: virar-01 :arg1 city :name name :op1 la :op2 coruña :arg2 city :name name :op1 a :op2 coruña :manner oficial
+traduzir grafo a sentença: assunto :domain homossexualidade :arg1-of existir-01 :polarity - :location país
+traduzir grafo a sentença: e :op1 edifício :quant 5 :op2 area-quantity :quant 14.000 :unit metro-quadrado
+traduzir grafo a sentença: retornar-01 :arg0 mariposa :arg4 front :frequency sempre
+traduzir grafo a sentença: street-address-91 :arg1 624 :arg2 road :name name :op1 rotary :arg4 city :name name :op1 ferrazópolis :domain endereço
+traduzir grafo a sentença: chocar-02 :arg1 pessoa :arg0-of fazer-01 :arg1 ciência :quant muito :location country :name name :op1 estados :op2 unidos
+traduzir grafo a sentença: person :name name :op1 joão :op2 filgueiras :op3 lima :domain amr-unknown
+traduzir grafo a sentença: interessar-01 :arg1 história :poss person :name name :op1 hamilton
+traduzir grafo a sentença: preocupar-01 :arg0 cortar-01 :arg1 ministério :arg1 e :op1 produtor :op2 ambientalista
+traduzir grafo a sentença: e :op1 jornalista :op2 consultora :topic qualidade :topic texto
+traduzir grafo a sentença: preocupar-01 :arg0 cortar-01 :arg1 ministério :arg1 e :op1 produtor :op2 ambientalista
+traduzir grafo a sentença: contrast-01 :arg2 saber-01 :polarity - :arg0 ele :arg1 aguardar-01 :arg0 thing :arg1 ele
+traduzir grafo a sentença: conflito :arg0-of cause-01 :arg1 preferir-01 :arg0 nós :arg1 encerrar-01 :arg0 nós :arg1 parceria
+traduzir grafo a sentença: conseguir-03 :arg0 eles
+traduzir grafo a sentença: e :op1 acabar-01
+traduzir grafo a sentença: url-entity :value www.ekrbrasil.com :domain site
+traduzir grafo a sentença: person :name name :op1 lucas :op2 veloso
+traduzir grafo a sentença: ter-01 :arg1 agrotóxico :polarity amr-unknown
+traduzir grafo a sentença: email-address-entity :value coluna.obituario@grupofolha.com.br
+traduzir grafo a sentença: internet-das-coisas
+traduzir grafo a sentença: ele :polarity - :mode imperative
+traduzir grafo a sentença: person :name name :op1 domínguez :mod especialmente
+traduzir grafo a sentença: saber-01 :arg0 ninguém
+traduzir grafo a sentença: entender-01 :arg0 eu :polarity -
+traduzir grafo a sentença: querer-01 :polarity - :arg0 ele
+traduzir grafo a sentença: ciclo :mod novo
+traduzir grafo a sentença: todo-mundo
+traduzir grafo a sentença: não
+traduzir grafo a sentença: qual :mode interrogative
+traduzir grafo a sentença: tudo
+traduzir grafo a sentença: pelo-contrário
+traduzir grafo a sentença: carne :domain isso :polarity amr-unknown
+traduzir grafo a sentença: fotógrafo :mod aéreo
+traduzir grafo a sentença: recessão :mod economia :polarity amr-unknown
+traduzir grafo a sentença: esquerda :op1 esquerda :op2 direita
+traduzir grafo a sentença: ter-03 :arg1 nós :arg2 vitória :mod have-degree-91 :arg3 muito :location conselho
+traduzir grafo a sentença: querer-01 :arg0 eu :arg1 chutar-01 :arg0 você :manner de-três
+traduzir grafo a sentença: fazer-01 :arg0 person :name name :op1 felipão :arg1 alterar-01 :quant 2
+traduzir grafo a sentença: atribuir-01 :arg1 sucesso :arg2 amr-unknown
+traduzir grafo a sentença: pessoa :arg0-of have-org-role-91 :arg2 secretário :mod município :topic e :op1 esporte :op2 lazer
+traduzir grafo a sentença: fazer-01 :arg1 acordar-02 :quant 8 :mod apenas
+traduzir grafo a sentença: ter-05 :arg0 ele :mod também :arg2 eu
+traduzir grafo a sentença: depor-01 :arg2 person :name name :op1 walter :op2 porto
+traduzir grafo a sentença: poeta :source country :name name :op1 corea :domain person :name name :op1 kim :op2 ki-taek
+traduzir grafo a sentença: fazer-01 :polarity - :arg0 eu :arg1 amr-unknown
+traduzir grafo a sentença: amr-unknown :location-of câmara
+traduzir grafo a sentença: existir-01 :arg1 cenário :arg0-of propiciar-01 :polarity amr-unknown :time hoje
+traduzir grafo a sentença: tendência :polarity amr-unknown :domain continuar-02 :manner padrão :mod esse
+traduzir grafo a sentença: acontecer-01 :arg1 isso :time denunciar-01 :mod esse :ord ordinal-entity :value 1
+traduzir grafo a sentença: contrast-01 :arg1 forma :polarity - :manner-of fazer-01 :arg0 eles
+traduzir grafo a sentença: servir-02 :arg1 eu :arg2 burocracia :domain eu :polarity -
+traduzir grafo a sentença: querer-01 :arg0 ele :polarity - :arg1 fazer-01 :arg0 ele :arg1 coalizão
+traduzir grafo a sentença: ter-01 :arg0 government-organization :name name :op1 polícia :op2 federal :mod feliz :polarity - :arg0 efetivo :mod pouco
+traduzir grafo a sentença: sair-01 :polarity - :arg1 nada :arg2 person :name name :op1 haddad
+traduzir grafo a sentença: contrast-01 :arg2 cidade :poss nós :domain city :name name :op1 rio
+traduzir grafo a sentença: e :op1 vir-01 :arg0 amigo :arg4 aqui :op2 trazer-01 :arg0 amigo :arg1 ele
+traduzir grafo a sentença: ter-02 :arg1 gritar-01 :time mexer-01 :arg1 isso
+traduzir grafo a sentença: valer-03 :arg1 isso :arg2 crime :mod corporação
+traduzir grafo a sentença: ter-01 :arg0 presidente :arg1 espaço :location mídia :polarity amr-unknown
+traduzir grafo a sentença: aliar-01 :domain organizada :mod principal :poss clube :quant 2
+traduzir grafo a sentença: desde :op1 date-entity :year 2010 :time-of investir-01 :arg0 empresário :arg2 country :name name :op1 eua
+traduzir grafo a sentença: querer-01 :polarity - :arg0 team :name name :op1 chapecoense :arg1 fazer-402 :arg0 team :arg1 parte :arg2 processar-02 :mod este
+traduzir grafo a sentença: deixar-03 :arg0 person :name name :op1 infantino :arg1 sports-facility :name name :op1 monumental :arg2 cara-amarrada
+traduzir grafo a sentença: ter-01 :arg0 clube :arg1 jogador :quant 25 :arg1-of emprestar-01 :mod ainda
+traduzir grafo a sentença: prazo :polarity - :purpose resolver-01
+traduzir grafo a sentença: ter-01 :arg0 company :name name :op1 finview :arg1 thing :arg0-of representar-03 :location country :name name :op1 brasil
+traduzir grafo a sentença: dizer-01 :arg0 eles :arg1 futebol :mod raíz :mod ainda
+traduzir grafo a sentença: ter-01 :arg0 empresa :arg1 funcionário :quant 5 :time ocasião
+traduzir grafo a sentença: e :op1 existir-01 :polarity - :arg1 garantia :mod trabalho :op2 existir-01 :polarity - :arg1 garantia :mod previdência
+traduzir grafo a sentença: avaliar-01 :arg1 person :name name :op1 kevin :time date-entity :day 29 :weekday quinta-feira
+traduzir grafo a sentença: crescer-01 :arg1 expectativa :topic viver-01 :location country :name name :op1 eua :duration múltiplo :op1 temporal-quantity :quant 1 :unit década
+traduzir grafo a sentença: cancelar-01 :arg0 governo :arg1 expedição :purpose levar-02 :arg1 presente :arg2 sentinela
+traduzir grafo a sentença: contrast-01 :arg1 deixar-01 :arg0 nós :arg1 government-organization :name name :op1 união :op2 europeia :arg2 deixar-01 :arg0 nós :arg1 continent :name name :op3 europa
+traduzir grafo a sentença: e :op1 frequentar-01 :arg0 ele :arg1 escola :mod excelente :op2 formar-102 :arg1 ele :arg2 economia :location university :name name :op1 yale
+traduzir grafo a sentença: contrast-01 :arg2 acreditar-01 :arg0 person :name name :op1 pandit :arg1 justo :polarity - :domain fama
+traduzir grafo a sentença: dizer-01 :arg0 ele :arg1 retirar-01 :arg0 nós :mod justamente :purpose evitar-01 :arg1 comentário
+traduzir grafo a sentença: dizer-01 :arg0 person :name name :op1 louie :op2 burgain :age temporal-quantity :quant 62 :unit ano :arg1 fazer-06 :arg0 person :arg1 preço :mod especial
+traduzir grafo a sentença: acreditar-01 :polarity - :arg0 person :name name :op1 araújo :arg1-of same-01 :arg2 person :name name :op1 trump :arg1 aquecimento-global
+traduzir grafo a sentença: orientar-01 :polarity - :arg0 regime :arg2 número :topic filho
+traduzir grafo a sentença: órgão :mod específico :polarity - :arg0-of supervisionar-01 :arg1 juiz
+traduzir grafo a sentença: destacar-01 :arg0 eu :arg1 thing :quant 1 :example verdade :mod único :domain realidade
+traduzir grafo a sentença: entrar-03 :arg0 eles :arg1 organization :name name :op1 liga :op2 da :op3 juventude :time age-01 :arg1 eles :arg2 temporal-quantity :quant 14 :unit ano
+traduzir grafo a sentença: alimentar-01 :arg0 vento :arg1 foco :topic incêndio :location área :mod rural
+traduzir grafo a sentença: falar-01 :arg0 person :name name :op1 haddad :arg1 risco :topic democracia :location país :mod ainda
+traduzir grafo a sentença: falar-01 :arg0 person :name name :op1 haddad :arg1 cobrar-02 :arg1 criticar-01 :arg0 political-party :name name :op1 pt :arg1 political-party :mod ainda
+traduzir grafo a sentença: afirmar-01 :arg0 ele :arg1 ele :op1 querer-01 :arg0 ninguém :arg1 mundo :mod obscurantismo
+traduzir grafo a sentença: esquema :mod semelhante :arg1-of ter-01 :arg0 organization :name name :op1 cooperativa :op2 jangchon :location subúrbio :part city :name name :op1 pyangyong
+traduzir grafo a sentença: event :name name :op1 encontro :op2 feminista :op3 latino-americano :op4 e :op5 caribenho :ord ordinal-entity :value 1 :time date-entity :year 1981 :arg1-of ocorrer-01
+traduzir grafo a sentença: encontrar-101 :arg0 arquiteto :arg1 pessoa :arg1-of atingir-01 :arg1-of acontecer-01 :time desde :op1 date-entity :day 30 :month 5
+traduzir grafo a sentença: e :op1 assassinar-01 :arg0 person :name name :op1 trujillo :time ano :mod seguinte :op2 vir-01 :arg1 democratização
+traduzir grafo a sentença: existencialismo :domain linha :poss ele :topic psicologia :arg1-of criar-01 :arg0 person :name name :op1 sartre
+traduzir grafo a sentença: demonstrar-01 :polarity - :arg0 isso :arg1 realidade :mod uniforme :location país :manner necessário
+traduzir grafo a sentença: parar-01 :arg1 escola :quant vários :source country :name name :op1 brasil :condition ele :arg1-of renovar-01 :polarity -
+traduzir grafo a sentença: pessoa :arg0-of dirigir-01 :mod editora :arg1 organization :name name :op1 nova :op2 escola :arg0-of ter-01 :arg1 site :name url-entity :value novaescola.org.br :domain person :name name :op1 leandro :op2 beguoci
+traduzir grafo a sentença: contar-02 :polarity - :arg0 isso :arg1 médico :location or :op1 country :name name :op1 portugal :op2 country :name name :op1 spain :mod qualquer
+traduzir grafo a sentença: presente :time sempre :domain pai :poss person :name name :op1 lucas :arg1-of admitir-01 :arg0 person
+traduzir grafo a sentença: contrast-01 :arg2 possible-01 :arg1 tornar-101 :arg1 eles :arg2 e :op1 pessoa :arg0-of estuprar-01 :op2 pessoa :arg0-of abusar-01
+traduzir grafo a sentença: ou :op1 chamar-02 :arg0 nós :arg1 eles :op2 abrir-01 :arg0 nós :arg1 edital :mod outro :arg1-of afirmar-01 :arg0 ele
+traduzir grafo a sentença: essa :arg1-of avaliar-01 :arg0 professor :arg0-of have-org-role-91 :arg1 school :name name :op1 objetivo :domain essa :op1 curso :op2 colégio
+traduzir grafo a sentença: contrast-01 :arg2 profunda :domain revolução :poss ele :degree mais :degree muito
+traduzir grafo a sentença: responder-01 :arg0 presidente :arg1-of eleger-01 :arg1 pergunta :mod outro :mode imperative :polite +
+traduzir grafo a sentença: considerar-01 :arg0 pessoa :arg0-of pesquisar-01 :mod vários :arg1 ato :arg2 loucura
+traduzir grafo a sentença: acessar-01 :arg0 gente :quant pouco :degree muito :arg1 livro
+traduzir grafo a sentença: deixar-02 :arg0 ele :arg1 definir-02 :arg0 forma :arg1 forma :instrument material :poss forma :arg2 forma
+traduzir grafo a sentença: vir-01 :arg1 equipe :arg3 mundo :mod inteiro :mod também
+traduzir grafo a sentença: experimento :mod algum :location mostra :arg1-of include-91 :arg2 experimento :mod esse
+traduzir grafo a sentença: contrast-01 :arg1 número :polarity - :domain coisa :arg1-of questionar-01 :mod só
+traduzir grafo a sentença: fazer-01 :arg1 personagem :arg2 pulsão
+traduzir grafo a sentença: censura :domain isso
+traduzir grafo a sentença: plano :mod imediato :polarity - :domain isso :arg2-of contrast-01
+traduzir grafo a sentença: difícil :beneficiary person :name name :op1 matarazzo :domain date-entity :decade 1960
+traduzir grafo a sentença: ir-01 :arg4 laboratório :mod só
+traduzir grafo a sentença: investigar-01 :arg1 caso :mod ainda
+traduzir grafo a sentença: chamar-101 :arg2 publication :name name :op1 sal :op2 gordura :op3 ácido :op4 calor
+traduzir grafo a sentença: valer-01 :arg1 company :name name :op1 microsoft :arg2 monetary-quantity :quant 822900000000 :unit dólar
+traduzir grafo a sentença: depender-01 :arg2 location :arg3-of vir-01 :arg1 produto
+traduzir grafo a sentença: cause-01 :arg0 fisiologia :arg1 medical-condition :name name :op1 ginecomastia :mod maioria
+traduzir grafo a sentença: e :op1 chamar-01 :arg1 guia :arg2 person :name name :op1 yumi :op2 falar-01 :arg0 guia :arg1 português
+traduzir grafo a sentença: estadia :location quarto :mod duplo :accompanier café-da-manhã
+traduzir grafo a sentença: acontecer-01 :arg1 evento :time date-interval :op1 date-entity :time 10:00 :op2 date-entity :time 18:00
+traduzir grafo a sentença: valorizar-01 :li 1 :arg0 pessoa :arg0-of ter-01 :arg1 peça :arg1-of valorizar-01
+traduzir grafo a sentença: compartilhar-01 :mode imperative
+traduzir grafo a sentença: acontecer-01 :polarity - :domain spoiler
+traduzir grafo a sentença: levar-02 :mode imperative :arg2 geladeira
+traduzir grafo a sentença: fazer-01 :arg1 tudo :purpose garantir-02 :arg1 direito :arg1-of adquirir-01 :location sistema :mod atual
+traduzir grafo a sentença: e :op1 considerar-01 :arg0 empresa :arg1 equipamento :arg2 ultrapassado :op2 querer-01 :arg0 empresa :arg1 adquirir-01 :arg0 empresa :arg1 modelo :mod moderno
+traduzir grafo a sentença: preferir-01 :arg0 company :name name :op1 a :op2 folha :arg1 aguardar-01 :arg0 company :manner posição :mod distanciamento :mod crítica
+traduzir grafo a sentença: mostrar-01 :arg0 relatório :mod outro :arg1 afetar-01 :arg0 gene :name name :op1 ret :mod defeito :arg1 e :op1 rim :part-of animal :op2 intestino :part-of animal
+traduzir grafo a sentença: admitir-02 :polarity - :arg0 eu :arg1 treinar-01 :polarity - :arg0 ele :manner obligate-01 :arg2 treinar-01 :arg0 ele
+traduzir grafo a sentença: afirmar-01 :arg0 ele :arg1 ter-01 :arg0 ele :arg1 include-91 :arg1 e :op1 negro :op2 judeu :arg2 correligionário
+traduzir grafo a sentença: afastar-01 :arg1 ele :arg2 organization :name name :op1 comissão :op2 de :op3 arbitragem
+traduzir grafo a sentença: possible-01 :arg1 aliar-01 :arg0 nós :arg1-of aliar-01 :arg2 amr-unknown
+traduzir grafo a sentença: vetar-01 :arg0 country :name name :op1 rússia :arg1 documento :topic country :name name :op1 bósnia
+traduzir grafo a sentença: saúde :mode expressive
+traduzir grafo a sentença: modificar-01 :arg0 ela :arg1 nós
+traduzir grafo a sentença: gostar-01 :polarity - :arg0 ele :arg1-of request-confirmation-91
+traduzir grafo a sentença: have-degree-91 :arg1 chegar-01 :arg1 location :name name :op1 pedra :op2 azul :instrument carro :arg2 bom :arg3 máximo
+traduzir grafo a sentença: possible-01 :arg1 agendar-01 :arg1 tour :destination vinhedo :location região :medium url-entity :value valesdauvagoethe.com.br
+traduzir grafo a sentença: newspaper :name name :op1 the :op2 wall :op3 street :op4 journal :arg1-of traduzir-01 :arg0 person :name name :op1 paulo :op2 migliacci :arg3 inglês
+traduzir grafo a sentença: e :op1 técnico :op2 profissional :op3 dedicado :op4 sério :degree muito :domain ele
+traduzir grafo a sentença: company :name name :op1 mc3 :poss person :name name :op1 paladino :domain empresa :arg1-of mencionar-01
+traduzir grafo a sentença: dizer-01 :arg0 person :name name :op1 moro :arg1 ter-01 :arg0 law :name name :op1 pl :op2 9054/17 :arg1 ponto :mod problema :degree muito
+traduzir grafo a sentença: e :op1 eleger-01 :arg1 person :name name :op1 donald :op2 trump :domain resposta
+traduzir grafo a sentença: cause-01 :arg0 limite :mod espaço :arg1 utilizar-01 :arg0 eu :arg1 referência :mod suficiente
+traduzir grafo a sentença: e :op1 have-degree-91 :arg1 have-degree-91 :arg1 ovo :mod frito :arg2 gostar-01 :arg3 mais :arg2 importar-02 :arg3 máximo
+traduzir grafo a sentença: person :name name :op1 kilner :arg0-of practicar-01 :time antes :op1 agora :quant temporal-quantity :quant 6 :unit ano :arg0-of confirmar-01
+traduzir grafo a sentença: possible-01 :arg1 chamar-01 :arg0 nós :arg1 fenômeno :arg2 efeito :mod coca-cola

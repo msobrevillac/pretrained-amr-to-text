@@ -1,0 +1,224 @@
+traduzir grafo a sentença: independente ordem
+traduzir grafo a sentença: culpar-01 person name alckmin amr-unknown
+traduzir grafo a sentença: fazer-01 eu
+traduzir grafo a sentença: obligate-01 acumular-01 country name brasil experiência
+traduzir grafo a sentença: ideia esse pueril
+traduzir grafo a sentença: doido eles claro
+traduzir grafo a sentença: perceber-01 - amr-unknown
+traduzir grafo a sentença: precisar-01 povo acumular-01 povo experiência
+traduzir grafo a sentença: diferente isso
+traduzir grafo a sentença: assumir-01 - ele cause-01 amr-unknown
+traduzir grafo a sentença: querer-01 ele -
+traduzir grafo a sentença: rejeitar-01 eu pessoa 2
+traduzir grafo a sentença: haver-01 maioria fechar-04 acordo
+traduzir grafo a sentença: ocupar-01 vazio
+traduzir grafo a sentença: ficar-201 ele só literal
+traduzir grafo a sentença: agenda ninguém isso
+traduzir grafo a sentença: e subir-01 temperatura descer-01 temperatura
+traduzir grafo a sentença: querer-01 eu preservar-01 eu meio-ambiente
+traduzir grafo a sentença: possible-01 vencer-02 nós estar-301 person name lula nós
+traduzir grafo a sentença: contrast-01 voltar-01 discursar-01 esse
+traduzir grafo a sentença: perigo - pessoa esse
+traduzir grafo a sentença: possible-01 barrar-01 government-organization name stf ele
+traduzir grafo a sentença: ocupar-01 vazio
+traduzir grafo a sentença: haver-01 - debate interno
+traduzir grafo a sentença: colocar-02 decidir-01 ele suspeito amr-unknown
+traduzir grafo a sentença: person - name lula
+traduzir grafo a sentença: ler-01 imperative nota mais painel
+traduzir grafo a sentença: ter-01 ordem transparência
+traduzir grafo a sentença: favorecer-101 ele específica -
+traduzir grafo a sentença: preocupar-01 isso eu
+traduzir grafo a sentença: leviano eu
+traduzir grafo a sentença: saber-01 eu nada person name bolsonaro
+traduzir grafo a sentença: acontecer-01 amr-unknown
+traduzir grafo a sentença: banir-01 conservar-01 opinião
+traduzir grafo a sentença: sonoplastia fazer-01 person name andré luis omote
+traduzir grafo a sentença: queimar-01 manteiga
+traduzir grafo a sentença: e fui-que-fui eu
+traduzir grafo a sentença: musica 4 ouvir-01 musica virada
+traduzir grafo a sentença: auditório museum name masp city name sp
+traduzir grafo a sentença: filmar-01 book name gh amr-unknown
+traduzir grafo a sentença: person name sacha gervasi dirigir-01
+traduzir grafo a sentença: seguir-301 eu ter-01 eu opinião esse
+traduzir grafo a sentença: dirigir-01 person name bianca turner arte
+traduzir grafo a sentença: psicoanalista - person name rodrigo
+traduzir grafo a sentença: sucesso pacote
+traduzir grafo a sentença: cause-01 amr-unknown diferença estratosfera
+traduzir grafo a sentença: imediato coisa responder-01
+traduzir grafo a sentença: falar-01 eu acordar-01 date-entity 09:00
+traduzir grafo a sentença: haver-01 isso já ano algum
+traduzir grafo a sentença: moda academia especializado
+traduzir grafo a sentença: comunidade person name bento
+traduzir grafo a sentença: adiantar-02 - chorar-01
+traduzir grafo a sentença: deixar-01 ele filha 2
+traduzir grafo a sentença: sofrer-01 eu depressão
+traduzir grafo a sentença: tenacidade puro ele
+traduzir grafo a sentença: culpa amr-unknown
+traduzir grafo a sentença: prever-01 - próximo
+traduzir grafo a sentença: permit-01 - ele fazer-01 ele eufemismo
+traduzir grafo a sentença: monetary-quantity 754 dólar
+traduzir grafo a sentença: aéreo -
+traduzir grafo a sentença: city name san sebastián
+traduzir grafo a sentença: city name são paulo
+traduzir grafo a sentença: person name alvise camozzi
+traduzir grafo a sentença: certo isso muito
+traduzir grafo a sentença: violência -
+traduzir grafo a sentença: rate-entity-91 temporal-quantity 1 dia
+traduzir grafo a sentença: pessoa country name russia
+traduzir grafo a sentença: tolice
+traduzir grafo a sentença: school name instituto goethe
+traduzir grafo a sentença: amém
+traduzir grafo a sentença: acontecer-01 amr-unknown desde então
+traduzir grafo a sentença: haver-01 esconder-01 nada -
+traduzir grafo a sentença: compartilhar imperative nós história incluir-01 história
+traduzir grafo a sentença: acusar-01 amr-unknown
+traduzir grafo a sentença: person name marie-amélie vaillat temporal-quantity 36 ano country name frança
+traduzir grafo a sentença: e jornalista colunista
+traduzir grafo a sentença: e comer-01 casar-01 dancar-01
+traduzir grafo a sentença: acontecer-01 amr-unknown agora
+traduzir grafo a sentença: dizer-01 dia - pai
+traduzir grafo a sentença: contrast-01 exibir-01 movimento resiliência
+traduzir grafo a sentença: quantity 20000 date-entity 2017
+traduzir grafo a sentença: ficar-201 missão have-degree-91 difícil mais
+traduzir grafo a sentença: ter-01 problema outro fundo político
+traduzir grafo a sentença: totem - aeroporto
+traduzir grafo a sentença: dispensar-02 churrasco e formalidade salamaleque
+traduzir grafo a sentença: ter-01 ele coragem amr-unknown
+traduzir grafo a sentença: possible-01 - carne faltar-01
+traduzir grafo a sentença: have-degree-91 ideologia importante menos lealdade
+traduzir grafo a sentença: circular-01 imprensa acampamento livre
+traduzir grafo a sentença: contrast-01 haver-01 coisa arranjar-01 ainda minoria coisa
+traduzir grafo a sentença: soltar-01 nós ninguém country name eua
+traduzir grafo a sentença: e visitar-01 eles área próximo - causar-01 eles problema
+traduzir grafo a sentença: vir-01 ele ele mulher filho 3
+traduzir grafo a sentença: soar-01 som emitir-01 acordeão e longe claro
+traduzir grafo a sentença: say-01 eu cantar-01 nós imperative unissono camarada
+traduzir grafo a sentença: include-91 homem votar-01 political-party name republicano homem percentage-entity 51
+traduzir grafo a sentença: aprender-01 nós diante morrer-01
+traduzir grafo a sentença: dizer-01 ele luto advocacia
+traduzir grafo a sentença: dizer-01 person name heidegger dar-14 morrer-01 sentido viver-01
+traduzir grafo a sentença: variar-01 temperatura entre temperature-quantity 18 celsius temperature-quantity 23 celsius
+traduzir grafo a sentença: matar-01 pessoa country name alemanha você
+traduzir grafo a sentença: situação ver-01 person name lins bairro
+traduzir grafo a sentença: conhecer-01 imperative história viver-01 person name elisabeth kübler-ross
+traduzir grafo a sentença: monetary-quantity 100 real média preço
+traduzir grafo a sentença: modificar-01 - cobrar-02 city name jambeiro
+traduzir grafo a sentença: e poética madura profundidade
+traduzir grafo a sentença: enganar-01 inocente
+traduzir grafo a sentença: person name giacomo vicenzo
+traduzir grafo a sentença: muito isso amr-unknown
+traduzir grafo a sentença: região centro
+traduzir grafo a sentença: email-address-entity giacomovicenzo@agenciamural.org.br
+traduzir grafo a sentença: pensar-01 eu doze eu
+traduzir grafo a sentença: url-entity https://ekrbrasil.com/historia-de-vida/
+traduzir grafo a sentença: centena
+traduzir grafo a sentença: e conseguir-01 ele
+traduzir grafo a sentença: conseguir-01 - ele
+traduzir grafo a sentença: country name república dominicana
+traduzir grafo a sentença: country name canadá
+traduzir grafo a sentença: depender-01 ele
+traduzir grafo a sentença: assumir-01 imperative
+traduzir grafo a sentença: dizer-01 ele person name moro cuidar-01 person
+traduzir grafo a sentença: perder-01 ele
+traduzir grafo a sentença: espaço
+traduzir grafo a sentença: concordar-01 nós
+traduzir grafo a sentença: querer-01 person name lula
+traduzir grafo a sentença: country country name venezuela
+traduzir grafo a sentença: engano
+traduzir grafo a sentença: quê interrogative
+traduzir grafo a sentença: inédito algo isso
+traduzir grafo a sentença: empatar-01 team name lyon team name manchester city score-entity 2 2
+traduzir grafo a sentença: possible-01 assim - isso
+traduzir grafo a sentença: mudar-01 eu assunto
+traduzir grafo a sentença: começar-01 person name paulo nobre
+traduzir grafo a sentença: continuar-301 person name renato gaúcho team name grêmio
+traduzir grafo a sentença: amigo nós rapidez muito
+traduzir grafo a sentença: date-entity 1938 ano
+traduzir grafo a sentença: saída amr-unknown
+traduzir grafo a sentença: achar-02 eu feliz - não
+traduzir grafo a sentença: comandar-01 person name onyx área esse
+traduzir grafo a sentença: relacionar-101 vôce ele amr-unknown
+traduzir grafo a sentença: colaborar-01 povo espontânea thing acontecer-01
+traduzir grafo a sentença: conceito definir-01 bem e ditadura democracia
+traduzir grafo a sentença: problema have-degree-91 grande máximo nós reforma política
+traduzir grafo a sentença: fazer-01 eu já possible-01 fazer-01 eu sozinho
+traduzir grafo a sentença: fazer-01 psicopata só negócio esse evidente
+traduzir grafo a sentença: aguardar-01 caso analisar-01 government-organization name supremo government-organization
+traduzir grafo a sentença: dizer-01 eu e valeu país nós country name brasil pessoal
+traduzir grafo a sentença: lembrar-01 - eu conversar-01 nós mais
+traduzir grafo a sentença: concluir-01 ele respeitar-01 ele subjetividade
+traduzir grafo a sentença: visualizar-01 eu fora esse
+traduzir grafo a sentença: escolher-01 presidente eleger-02 ministro 19 já
+traduzir grafo a sentença: contrast-01 acabar-01 - temporada ainda
+traduzir grafo a sentença: city name doha cidade favorito country name qatar
+traduzir grafo a sentença: ficar-03 team name palmeiras lucro
+traduzir grafo a sentença: trabalhar-01 nós pessoa dirigir-01 team name palmeiras
+traduzir grafo a sentença: violência 1 gramado
+traduzir grafo a sentença: completar-01 quadrangular equipe 2 local
+traduzir grafo a sentença: querer-01 eu campeão mundo team name palmeiras
+traduzir grafo a sentença: be-temporally-at-91 date-entity 3 20:00 segunda
+traduzir grafo a sentença: acontecer-01 algo semelhante e sub-17 sub-20
+traduzir grafo a sentença: disputar-01 ambos bola alto
+traduzir grafo a sentença: usar-01 - alguém local visitar-01 newspaper name folha fábrica
+traduzir grafo a sentença: haver-01 novata só government-organization name senado lado conservador
+traduzir grafo a sentença: crescer-01 economia percentage-entity 2.8 período realidade
+traduzir grafo a sentença: demorar-01 cerimônia oficial assinar-01 temporal-quantity 90 minuto
+traduzir grafo a sentença: assunto crise country name venezuela permear-01 reunião
+traduzir grafo a sentença: aberto público e auto judicial processo em-andamento também
+traduzir grafo a sentença: pessoa country name coreia do norte ouvir-01 newspaper name folha dizer-01 cair-01 ele
+traduzir grafo a sentença: e ficar-202 ele cargo date-interval date-entity 1 date-entity 8 renunciar-01 ele cargo depois date-entity
+traduzir grafo a sentença: apaixonar-101 city name buenos aires a-primeira-vista
+traduzir grafo a sentença: possible-01 ganhar-01 country name brasil amr-unknown sair-01 country acordar-02 de-fato
+traduzir grafo a sentença: durar-01 força-tarefa essa temporal-quantity 10 dia fábrica name ryuwon calçado
+traduzir grafo a sentença: acontecer-01 amr-unknown rejeitar-01 government-organization name parlamento acordar-02
+traduzir grafo a sentença: tentar-01 - ele esconder-01 ele nada acrescentar-02 ele
+traduzir grafo a sentença: e sair-101 ele bem tremendo ao-longo-do-caminho
+traduzir grafo a sentença: opcao - voltar-01 person honduras name edgardo garcia temporal-quantity 44 ano person
+traduzir grafo a sentença: evitar-01 person name shannon comentar-01 person credencial direita presidente eleger-02 country name brasil
+traduzir grafo a sentença: e inspirar-01 mariposa resistir-01 nacional inspirar-01 mariposa resistir-01 internacional
+traduzir grafo a sentença: e perder-02 avião contato cair-04 avião meio trajeto
+traduzir grafo a sentença: promover-01 person name alexandra loras event name fórum diversifique edição ordinal-entity 1
+traduzir grafo a sentença: divulgar-01 lista date-entity 10 12
+traduzir grafo a sentença: receber-02 anunciar-01 nascer-01 criticar-01 muito mundo todo
+traduzir grafo a sentença: parecer-01 deixar-02 assumir-02 eles compromisso eles vestibular atual pai
+traduzir grafo a sentença: afirmar-01 ele ter-01 - ele dado pedir-01 médico número continuar-301 médico
+traduzir grafo a sentença: encorpar-01 coleção múltiplo temporal-quantity 1 ano
+traduzir grafo a sentença: ficar-01 program name mais médicos amr-unknown depois sair-01 pessoa country name cuba
+traduzir grafo a sentença: trazer-01 vestibular organization name fuvest novidade ano este
+traduzir grafo a sentença: ocorrer-01 isso situação e emergência símbolo
+traduzir grafo a sentença: presente e person name marielle person name mirabal eterno cause-01 perpetuar-01 nós e
+traduzir grafo a sentença: conhecer-01 imperative propriedade 6 destacar-101 prática sustentável
+traduzir grafo a sentença: destruir-01 comunidade bandeirante depois temporal-quantity 10 minuto
+traduzir grafo a sentença: gostar-01 eu renovar-01 energia sempre
+traduzir grafo a sentença: aula e thing name krav maga massagem tântrica
+traduzir grafo a sentença: querer-01 pessoa ter-01 pessoa thing acreditar-01 pessoa
+traduzir grafo a sentença: street-address-91 s/n road name ramos de azevedo city name são paulo
+traduzir grafo a sentença: e saber-01 ele isso falar-01 ele
+traduzir grafo a sentença: poste-do-inferno maoismo
+traduzir grafo a sentença: person name naief haddad have-org-role-91 company name folha jornalista
+traduzir grafo a sentença: e person name deus linha crédito person
+traduzir grafo a sentença: contrast-01 lugar planet name marte lindo inóspito planet
+traduzir grafo a sentença: fugir-01 bicho amr-unknown
+traduzir grafo a sentença: e viver-01 eu isso dia todo
+traduzir grafo a sentença: possible-01 criar-01 e problema emoção retratar-01 social
+traduzir grafo a sentença: programar-01 espetáculo começar-01 espetáculo date-entity 10:30
+traduzir grafo a sentença: smartphone muito conectar-01 ao-redor
+traduzir grafo a sentença: trazer-01 você coisa demais viagem também amr-unknown
+traduzir grafo a sentença: gostar-01 - request-confirmation-91
+traduzir grafo a sentença: decidir-01 organization name gaviões da fiel torcer-01 organizar-01 agir-01 organization contra arrastão estádio futebol
+traduzir grafo a sentença: e estar-301 eles prissão especial ter-01 eles curso superior aguardar-01 eles court-decision name julgamento de recurso
+traduzir grafo a sentença: adotar-01 person name ieltsin medida outro símbolo mostrar-01 person perder-02 poder government-organization name parlamento
+traduzir grafo a sentença: same-01 ao-todo computador cerca 5800 usar-01
+traduzir grafo a sentença: dizer-01 person name evandro obligate-01 - adquirir-01 pessoa arma defender-01 pessoa pessoa
+traduzir grafo a sentença: jogo interativo afetar-01 circunstância política
+traduzir grafo a sentença: homem eu agir-01 impulso
+traduzir grafo a sentença: obligate-01 - agir-01 ele assim
+traduzir grafo a sentença: querer-01 eu viver
+traduzir grafo a sentença: canal maluco
+traduzir grafo a sentença: instead-of-91 mato e parque temático companhia fabricar-01 chocolate
+traduzir grafo a sentença: acabar-01 nós indústria multa dizer-01 person name bolsonaro
+traduzir grafo a sentença: e atuar-01 ele general bom muito
+traduzir grafo a sentença: possible-01 advogado cerca 322700000 votar-01
+traduzir grafo a sentença: achar-02 eu chato lado 2
+traduzir grafo a sentença: estrear-01 person name händel ópera cerca 40 só date-entity 1720
+traduzir grafo a sentença: tentar-01 eu aqui questionar-01 eu representar-01 faltar-01 cuidar-01 thing
