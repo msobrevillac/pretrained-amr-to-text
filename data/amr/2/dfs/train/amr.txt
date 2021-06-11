@@ -213,7 +213,7 @@ person :name name :op1 joesley :op2 batista
 pretender-01 :polarity - :arg0 eu
 ok :polarity amr-unknown :domain isso
 e :op1 hoje :mode interrogative
-nenhum :gender fem
+nenhum
 constatar-01
 e :op1 acabar-01
 dizer-01 :arg0 eu :manner coração
@@ -317,7 +317,7 @@ infer-01 :arg1 e :op1 armar-01 :polarity - :arg1 elas :op2 be-located-at-91 :arg
 permitir-01 :arg0 investir-01 :mod esse :arg1 entrar-01 :arg0 cuidado :topic paliativo :arg1 country :name name :op1 estados :op2 unidos
 mudar-01 :arg1 paradigma :domain fazer-01 :arg0 ela
 ver-01 :arg0 ele :arg1 irmão :mod medio :arg1-of entregar-01 :arg2 pessoa :source country :name name :op1 alemanha
-cause-01 :arg0 juntar-01 :arg1 ele :gender fem :arg1 representar-01 :arg1 ele :arg2 e :op1 empresa :quant 68 :op2 include-91 :arg2 mercado :arg3 percentage-entity :value 87
+cause-01 :arg0 juntar-01 :arg1 ele :arg1 representar-01 :arg1 ele :arg2 e :op1 empresa :quant 68 :op2 include-91 :arg2 mercado :arg3 percentage-entity :value 87
 querer-01 :arg0 nós :arg1 e :op1 preço :quant menos :op2 técnica :quant menos :arg1-of dizer-01 :arg0 ele
 virar-01 :arg1 ela :arg2 professor :location escola :mod judaica :location city :name name :op1 são :op2 paulo
 matar-01 :arg0 isso :arg1 e :op1 vespa :op2 lagarta :op3 cigarrinha :op4 pulgão :op5 ácaro
@@ -335,7 +335,7 @@ dívida :poss ele :location ouvido :mod um-a-um
 ter-01 :arg0 caixa :arg0-of registrar-01 :arg1 elas :arg0-of sorrir-01
 morrer-01 :arg1 comunista :mod internacional :time antes :op1 agora :quant muito :op1 tempo
 achar-02 :arg0 eu :arg1 privilegiado :domain eu
-e :op1 este :gender fem :arg1-of combater-01 :arg0 ele :mod de-fato
+e :op1 este :arg1-of combater-01 :arg0 ele :mod de-fato
 saber-01 :arg0 eu :arg1 importante :degree muito :domain denunciar-01
 automático :domain tudo :time descer-01
 contribuir-01 :arg0 country :name name :op1 brasil :arg2 área :mod espacio :time sempre :quant muito

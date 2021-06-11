@@ -213,7 +213,7 @@ person name joesley batista
 pretender-01 - eu
 ok amr-unknown isso
 e hoje interrogative
-nenhum fem
+nenhum
 constatar-01
 e acabar-01
 dizer-01 eu coração
@@ -317,7 +317,7 @@ infer-01 e armar-01 - elas be-located-at-91 elas território desconhecer-01 cons
 permitir-01 investir-01 esse entrar-01 cuidado paliativo country name estados unidos
 mudar-01 paradigma fazer-01 ela
 ver-01 ele irmão medio entregar-01 pessoa country name alemanha
-cause-01 juntar-01 ele fem representar-01 ele e empresa 68 include-91 mercado percentage-entity 87
+cause-01 juntar-01 ele representar-01 ele e empresa 68 include-91 mercado percentage-entity 87
 querer-01 nós e preço menos técnica menos dizer-01 ele
 virar-01 ela professor escola judaica city name são paulo
 matar-01 isso e vespa lagarta cigarrinha pulgão ácaro
@@ -335,7 +335,7 @@ dívida ele ouvido um-a-um
 ter-01 caixa registrar-01 elas sorrir-01
 morrer-01 comunista internacional antes agora muito tempo
 achar-02 eu privilegiado eu
-e este fem combater-01 ele de-fato
+e este combater-01 ele de-fato
 saber-01 eu importante muito denunciar-01
 automático tudo descer-01
 contribuir-01 country name brasil área espacio sempre muito
