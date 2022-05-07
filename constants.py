@@ -7,4 +7,6 @@ OTHERS = ["<unk2>"]
 AMR_SPECIAL_TOKENS = ['multi-sentence', '<join>', ':snt1', ':snt2',
                       ':snt3', ':snt4', ':snt5', ':snt5', ':snt6', ':snt7',
                       ':snt8', ':snt9']
-GRAPH_SPECIAL_PREFIX = ["traduzir ud grafo a sentença:", "traduzir cg grafo a sentença:", "traduzir grafo a sentença:"]
+SPECIAL_PREFIX = {"ud": "traduzir ud grafo a sentença:", "cg": "traduzir cg grafo a sentença:", "graph": "traduzir grafo a sentença:", "lemma": "traduzir lema a senteça:"}
+
+

@@ -120,7 +120,7 @@ def train_epoch(model, epoch, loader, tokenizer, optimizer, print_every, device,
 		n += 1
         
 		if (index+1) % print_every == 0:
-			print(f'Epoch: {epoch} | Step: {index+1} | Loss: {total_loss/n}')
+			print(f'Epoch: {epoch+1} | Step: {index+1} | Loss: {total_loss/n}')
 			n = 0
 			total_loss = 0
 
@@ -146,25 +146,28 @@ def main(args):
 
 	device = torch.device('cuda' if torch.cuda.is_available() and args.gpu else 'cpu')
 
-	df_train = process_data(args.train_source, args.train_target)
-	df_dev = process_data(args.dev_source, args.dev_target)
-	df_test = process_data(args.test_source)
+	df_train = df_dev = df_test = None
+	df_train = process_data(args.train_source, args.train_target, args.task)
+	df_dev = process_data(args.dev_source, args.dev_target, args.task)
+	if args.test_source != "":
+		df_test = process_data(args.test_source, args.task)
 
 
 	tokenizer = T5Tokenizer.from_pretrained(args.model)
-
 	current_length_tokenizer = len(tokenizer)
 
 	for ast in AMR_SPECIAL_TOKENS:
 		if ast not in tokenizer.get_added_vocab():
 			tokenizer.add_tokens([ast])
 
+
 	train_set = AMRDataset(df_train, tokenizer, args.src_max_length, args.tgt_max_length, \
 						pretrained=args.pretrained_model, train=True, generation=generation)
 
 	dev_set = AMRDataset(df_dev, tokenizer, args.src_max_length, args.tgt_max_length, \
 						pretrained=args.pretrained_model)
-	test_set = AMRDataset(df_test, tokenizer, args.src_max_length, args.tgt_max_length, \
+	df_test is not None:
+		test_set = AMRDataset(df_test, tokenizer, args.src_max_length, args.tgt_max_length, \
 						pretrained=args.pretrained_model)
 
 	train_params = {'batch_size': args.batch_size,
@@ -185,7 +188,8 @@ def main(args):
 
 	train_loader = DataLoader(train_set, **train_params)
 	dev_loader = DataLoader(dev_set, **dev_params)
-	test_loader = DataLoader(test_set, **test_params)
+	if df_test is not None:
+		test_loader = DataLoader(test_set, **test_params)
 
 	model = T5ForConditionalGeneration.from_pretrained(args.model)
 	if torch.cuda.device_count() > 1:
@@ -208,7 +212,7 @@ def main(args):
 	#if args.optimizer == "adam":
 	optimizer = AdamW(model.parameters(), lr=args.learning_rate, eps=args.adam_epsilon)
 
-	if args.early_stopping_criteria == "perplexity":
+	if args.eval_criteria == "perplexity":
 		best_metric = float('inf')
 	else:
 		best_metric = 0.0
@@ -224,38 +228,38 @@ def main(args):
 
 		train_epoch(model, epoch, train_loader, tokenizer, optimizer, args.print_every, device, args.accum_steps)
 
-		if patience == -1:
-			model.save_pretrained(args.save_dir)
-			vocab_path = os.path.join(args.save_dir, "vocab")
-			if not os.path.exists(vocab_path):
-				os.mkdir(vocab_path)
-			tokenizer.save_pretrained(args.save_dir)
-			print("Model saved at epoch ", str(epoch))
-
-
+		if args.eval_criteria == "perplexity":
+			loss = evaluate_loss(model, dev_loader, tokenizer, device)
+			validation_metric = round(math.exp(loss), 3)
 		else:
-			if args.early_stopping_criteria == "perplexity":
-				loss = evaluate_loss(model, dev_loader, tokenizer, device)
-				validation_metric = round(math.exp(loss), 3)
-			else:
-				validation_metric = evaluate_bleu(model, dev_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
+			validation_metric = evaluate_bleu(model, dev_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
 
-			print(f'Validation {args.early_stopping_criteria}: {validation_metric:.3f}')
-			if improved(validation_metric, best_metric, args.early_stopping_criteria):
-				print(f'The {args.early_stopping_criteria} improved from {best_metric:.3f} to {validation_metric:.3f}')
+		print(f'Validation at epoch {epoch+1} - {args.eval_criteria}: {validation_metric:.3f}')
+
+		if patience > 0:
+			if improved(validation_metric, best_metric, args.eval_criteria):
+				print(f'The {args.eval_criteria} improved from {best_metric:.3f} to {validation_metric:.3f}')
 				best_metric = validation_metric
 				best_epoch = epoch
-				print("Saving checkpoint ... Best checkpoint:", str(best_epoch))
+				print("Saving checkpoint ... Best checkpoint:", str(best_epoch + 1), "(", str(best_metric), ")")
 				model.save_pretrained(args.save_dir)
 				vocab_path = os.path.join(args.save_dir, "vocab")
 				if not os.path.exists(vocab_path):
 					os.mkdir(vocab_path)
 				tokenizer.save_pretrained(args.save_dir)
 				patience = args.early_stopping_patience
-				print("Model saved at epoch ", str(epoch))
+				print("Model saved at epoch ", str(epoch + 1))
 			else:
 				patience -= 1
 				print(f'Patience ({patience}/{args.early_stopping_patience})')
+
+	if patience == -1:
+		print("Saving model")
+		model.save_pretrained(args.save_dir)
+		vocab_path = os.path.join(args.save_dir, "vocab")
+		if not os.path.exists(vocab_path):
+			os.mkdir(vocab_path)
+		tokenizer.save_pretrained(args.save_dir)
 
 	print("Loading best checkpoint ...")
 	model = T5ForConditionalGeneration.from_pretrained(args.save_dir)#
@@ -269,12 +273,13 @@ def main(args):
 		for prediction in predictions:
 			f.write(prediction.strip() + "\n")
 
-	# evaluating test set
-	print("Predicting on test set ...")
-	predictions = predict(model, test_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
-	with open(args.save_dir + "/test.out", "w") as f:
-		for prediction in predictions:
-			f.write(prediction.strip() + "\n")
+	if df_test is not None:
+		# evaluating test set
+		print("Predicting on test set ...")
+		predictions = predict(model, test_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
+		with open(args.save_dir + "/test.out", "w") as f:
+			for prediction in predictions:
+				f.write(prediction.strip() + "\n")
 
 
 	

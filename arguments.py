@@ -16,9 +16,9 @@ parser.add_argument(
   '-dev-tgt', '--dev_target', type=str, required=False, help='Path to dev target dataset')
 
 parser.add_argument(
-  '-test-src', '--test_source', type=str, required=False, help='Path to test source dataset')
+  '-test-src', '--test_source', type=str, default="", required=False, help='Path to test source dataset')
 parser.add_argument(
-  '-test-tgt', '--test_target', type=str, required=False, help='Path to test target dataset')
+  '-test-tgt', '--test_target', type=str, default="", required=False, help='Path to test target dataset')
 
 # training parameters
 parser.add_argument(
@@ -69,6 +69,9 @@ parser.add_argument(
   '-representation', '--representation', type=str, default="deep-ud", required=False, help='Kind of representation')
 
 parser.add_argument(
+  '-task', '--task', type=str, default="lemma", choices= ['ud', 'cg', 'graph', 'lemma'], required=True, help='Task. Default: lemma (lemma-to-text generation)')
+
+parser.add_argument(
   '-model','--model', type=str, required=False, default="pierreguillou/gpt2-small-portuguese", help='Path for a pre-trained model file (just to perform transfer learning)')
 
 parser.add_argument(
@@ -78,7 +81,7 @@ parser.add_argument(
   '-early-stopping-patience','--early-stopping-patience', type=int, default=-1, required=False, help='Early stopping patience')
 
 parser.add_argument(
-  '-early-stopping-criteria','--early-stopping-criteria', type=str, default="perplexity", choices=['perplexity', 'bleu'], help='Criteria to stop training (perplexity|bleu)')
+  '-eval-criteria','--eval-criteria', type=str, default="perplexity", choices=['perplexity', 'bleu'], help='Criteria to evaluate (perplexity|bleu)')
 
 
 def get_args():
