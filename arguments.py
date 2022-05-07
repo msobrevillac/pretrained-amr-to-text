@@ -75,7 +75,7 @@ parser.add_argument(
   '-pretrained-model', '--pretrained-model', default='gpt2', type=str, choices=['gpt2', 'bart', 'mbart', 't5', 'mt5', "t5-multi"], required=False, help='Pretrained model to be used')
 
 parser.add_argument(
-  '-early-stopping-patience','--early-stopping-patience', type=int, default=15, required=False, help='Early stopping patience')
+  '-early-stopping-patience','--early-stopping-patience', type=int, default=-1, required=False, help='Early stopping patience')
 
 parser.add_argument(
   '-early-stopping-criteria','--early-stopping-criteria', type=str, default="perplexity", choices=['perplexity', 'bleu'], help='Criteria to stop training (perplexity|bleu)')

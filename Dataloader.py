@@ -2,7 +2,7 @@ import pandas as pd
 import torch
 import torch.nn.functional as F
 from torch.utils.data import Dataset
-from constants import UD_SPECIAL_PREFIX, CG_SPECIAL_PREFIX, GRAPH_SPECIAL_PREFIX
+from constants import GRAPH_SPECIAL_PREFIX
 
 class WebnlgDataset(Dataset):
 

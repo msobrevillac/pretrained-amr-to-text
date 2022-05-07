@@ -224,55 +224,45 @@ def main(args):
 
 		train_epoch(model, epoch, train_loader, tokenizer, optimizer, args.print_every, device, args.accum_steps)
 
-		if patience == -1:
-			model.save_pretrained(args.save_dir)
-			vocab_path = os.path.join(args.save_dir, "vocab")
+		if args.early_stopping_criteria == "perplexity":
+			loss = evaluate_loss(model, dev_loader, tokenizer, device)
+			validation_metric = round(math.exp(loss), 3)
+		else:
+			validation_metric = evaluate_bleu(model, dev_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
+
+		print(f'Validation {args.early_stopping_criteria}: {validation_metric:.3f}')
+		if improved(validation_metric, best_metric, args.early_stopping_criteria):
+			print(f'The {args.early_stopping_criteria} improved from {best_metric:.3f} to {validation_metric:.3f}')
+			best_metric = validation_metric
+			best_epoch = epoch
+			print("Saving checkpoint ...")
+			model.save_pretrained(args.save_dir + "/e" + str(epoch))
+			vocab_path = os.path.join(args.save_dir + "/e" + str(epoch), "vocab")
 			if not os.path.exists(vocab_path):
 				os.mkdir(vocab_path)
-			tokenizer.save_pretrained(args.save_dir)
-			print("Model saved at epoch ", str(epoch))
-
-
+			tokenizer.save_pretrained(args.save_dir + "/e" + str(epoch))
+			patience = args.early_stopping_patience
+			print("Model saved")
 		else:
-			if args.early_stopping_criteria == "perplexity":
-				loss = evaluate_loss(model, dev_loader, tokenizer, device)
-				validation_metric = round(math.exp(loss), 3)
-			else:
-				validation_metric = evaluate_bleu(model, dev_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
-
-			print(f'Validation {args.early_stopping_criteria}: {validation_metric:.3f}')
-			if improved(validation_metric, best_metric, args.early_stopping_criteria):
-				print(f'The {args.early_stopping_criteria} improved from {best_metric:.3f} to {validation_metric:.3f}')
-				best_metric = validation_metric
-				best_epoch = epoch
-				print("Saving checkpoint ... Best checkpoint:", str(best_epoch))
-				model.save_pretrained(args.save_dir)
-				vocab_path = os.path.join(args.save_dir, "vocab")
-				if not os.path.exists(vocab_path):
-					os.mkdir(vocab_path)
-				tokenizer.save_pretrained(args.save_dir)
-				patience = args.early_stopping_patience
-				print("Model saved at epoch ", str(epoch))
-			else:
-				patience -= 1
-				print(f'Patience ({patience}/{args.early_stopping_patience})')
+			patience -= 1
+			print(f'Patience ({patience}/{args.early_stopping_patience})')
 
 	print("Loading best checkpoint ...")
-	model = T5ForConditionalGeneration.from_pretrained(args.save_dir)#
+	model = T5ForConditionalGeneration.from_pretrained(args.save_dir + "/e" + str(best_epoch))#
 	model.to(device)
 	print("Model was loaded sucessfully.")
 
 	# evaluating dev set
 	print("Predicting on dev set ...")
 	predictions = predict(model, dev_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
-	with open(args.save_dir + "/dev.out", "w") as f:
+	with open(args.save_dir + "/e" + str(best_epoch) + "/dev.out", "w") as f:
 		for prediction in predictions:
 			f.write(prediction.strip() + "\n")
 
 	# evaluating test set
 	print("Predicting on test set ...")
 	predictions = predict(model, test_loader, tokenizer, args.tgt_max_length, args.beam_size, device)
-	with open(args.save_dir + "/test.out", "w") as f:
+	with open(args.save_dir + "/e" + str(best_epoch) + "/test.out", "w") as f:
 		for prediction in predictions:
 			f.write(prediction.strip() + "\n")
 
